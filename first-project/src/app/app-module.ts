@@ -8,7 +8,7 @@ import { Home } from './home/home';
 @NgModule({
   declarations: [
     App,
-    Home
+    Home,
   ],
   imports: [
     BrowserModule,
