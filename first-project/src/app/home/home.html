@@ -1,43 +1,121 @@
-<div class="container-fluid">
-    <div class="py-2 bg-light"></div>
+<style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-    <header class="bg-light text-center py-5">
-        <div class="container">
-            <h1 class="display-4">Welcome To EMS</h1>
-            <p class="lead">Efficiently manage your employees with our powerful and intuitive system.</p>
-            <a href="allemployees.jsp" class="btn btn-warning btn-lg">Explore Employees</a>
-        </div>
-    </header>
+    .gradient-bg {
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
+      color: white;
+    }
 
-    <div class="py-2 bg-light"></div>
+    .btn-gradient {
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
+      color: white;
+      border: none;
+    }
 
-    <hr class="m-0">
+    .btn-gradient:hover {
+      background: linear-gradient(to right, #4a00e0, #8e2de2);
+      color: white;
+    }
 
-    <div class="py-2 bg-light"></div>
+    .section-light {
+      background-color: #f3f0ff;
+    }
 
-    <!-- Features -->
-    <section id="features" class="py-5 bg-light">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <i class="fas fa-users fa-3x text-warning mb-3"></i>
-                    <h5>Employee Database</h5>
-                    <p>Maintain detailed employee profiles with ease.</p>
-                </div>
-                <div class="col-md-4">
-                    <i class="fas fa-clock fa-3x text-warning mb-3"></i>
-                    <h5>Attendance Tracking</h5>
-                    <p>Track attendance and working hours in real time.</p>
-                </div>
-                <div class="col-md-4">
-                    <i class="fas fa-money-bill-wave fa-3x text-warning mb-3"></i>
-                    <h5>Payroll Management</h5>
-                    <p>Automate salary calculations and payslip generation.</p>
-                </div>
+    .card-title {
+      color: #4a00e0;
+    }
+
+    .card-text {
+      color: #555;
+    }
+
+    .full-height {
+      height: 100vh;
+    }
+
+    .icon-lg {
+      font-size: 2.5rem;
+      color: #8e2de2;
+    }
+  </style>
+<body>
+
+  <!-- Hero Section -->
+  <section class="full-height d-flex align-items-center gradient-bg text-center">
+    <div class="container">
+      <h1 class="display-3 fw-bold">Employee Management System</h1>
+      <p class="lead">Empowering your digital future with innovation, elegance, and performance.</p>
+      <p class="mt-3">Join hundreds of forward-thinking businesses who've launched their digital presence with us.</p>
+      <a href="#" class="btn btn-gradient btn-lg mt-4"><i class="fas fa-rocket me-2"></i> Get Started</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="full-height d-flex align-items-center section-light">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <i class="fas fa-bolt icon-lg mb-3"></i>
+              <h5 class="card-title">Lightning Fast</h5>
+              <p class="card-text">Our sites are optimized for speed and performance, ensuring seamless experiences.</p>
+              <p class="small text-muted">Built with the latest technologies and clean code principles.</p>
             </div>
+          </div>
         </div>
-    </section>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <i class="fas fa-palette icon-lg mb-3"></i>
+              <h5 class="card-title">Modern Design</h5>
+              <p class="card-text">Beautiful, minimal interfaces that match your brand's identity and goals.</p>
+              <p class="small text-muted">Designs are mobile-first and user-centered from start to finish.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <i class="fas fa-mobile-alt icon-lg mb-3"></i>
+              <h5 class="card-title">Fully Responsive</h5>
+              <p class="card-text">Looks great on phones, tablets, and desktops — no matter the screen size.</p>
+              <p class="small text-muted">One codebase. Infinite screen sizes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="py-2 bg-light"></div>
+  <!-- About Section -->
+  <section class="full-height d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="assets/images/1.jpg" class="img-fluid rounded shadow-sm" alt="About Us">
+        </div>
+        <div class="col-md-6">
+          <h2 style="color: #4a00e0;">About Us</h2>
+          <p class="lead">We are a team of passionate developers, designers, and creatives who love to build.</p>
+          <p>With over 10 years of experience, we've helped businesses across industries launch powerful websites, apps, and digital experiences that scale. Whether you're a startup or an enterprise, our goal is to bring your vision to life with technology that works and design that inspires.</p>
+          <ul class="list-unstyled mt-3">
+            <li><i class="fas fa-check-circle text-success me-2"></i> Custom Web Development</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i> UI/UX Design</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i> SEO & Marketing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</div>
+  <!-- Call to Action -->
+  <section class="full-height d-flex align-items-center gradient-bg text-center">
+    <div class="container">
+      <h2 class="mb-3 display-5">Let’s Bring Your Vision to Life</h2>
+      <p class="lead">No templates. No fluff. Just results-driven digital craftsmanship.</p>
+      <a href="#" class="btn btn-outline-light btn-lg mt-3"><i class="fas fa-envelope me-2"></i> Contact Us</a>
+    </div>
+  </section>
