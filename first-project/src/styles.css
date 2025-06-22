@@ -1,0 +1,16 @@
+.bg-violet {
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+.text-violet {
+  color: #4a00e0;
+}
+
+.border-violet {
+  border: #4a00e0 1px solid;
+}
+
+.btn-violet {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: white!important;
+}
