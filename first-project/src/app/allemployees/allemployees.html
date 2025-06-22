@@ -3,72 +3,29 @@
     <table class="table table-bordered table-striped table-hover">
       <thead class="table-dark">
         <tr>
-          <th>#</th>
-          <th>Name</th>
-          <th>Position</th>
-          <th>Department</th>
-          <th>Email</th>
-          <th>Phone</th>
-          <th>Location</th>
-          <th>Start Date</th>
-          <th>Status</th>
+          <th class="text-center">Id</th>
+          <th class="text-center">Name</th>
+          <th class="text-center">Email</th>
+          <th class="text-center">Phone</th>
+          <th class="text-center">Gender</th>
+          <th class="text-center">Designation</th>
+          <th class="text-center">Salary</th>
+          <th class="text-center">Action</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>Alice Johnson</td>
-          <td>Senior Software Engineer</td>
-          <td>Development</td>
-          <td>alice.j&#64;example.com</td>
-          <td>+1 555-0123</td>
-          <td>New York, NY</td>
-          <td>2020-03-15</td>
-          <td><span class="badge bg-success">Active</span></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Bob Smith</td>
-          <td>Frontend Developer</td>
-          <td>UI/UX</td>
-          <td>bob.s&#64;example.com</td>
-          <td>+1 555-0456</td>
-          <td>San Francisco, CA</td>
-          <td>2021-06-01</td>
-          <td><span class="badge bg-success">Active</span></td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Carol Lee</td>
-          <td>QA Engineer</td>
-          <td>Testing</td>
-          <td>carol.l&#64;example.com</td>
-          <td>+1 555-0789</td>
-          <td>Chicago, IL</td>
-          <td>2019-09-10</td>
-          <td><span class="badge bg-warning text-dark">On Leave</span></td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>David Brown</td>
-          <td>DevOps Engineer</td>
-          <td>Infrastructure</td>
-          <td>david.b&#64;example.com</td>
-          <td>+1 555-0987</td>
-          <td>Austin, TX</td>
-          <td>2018-01-22</td>
-          <td><span class="badge bg-success">Active</span></td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>Eva Green</td>
-          <td>Project Manager</td>
-          <td>Management</td>
-          <td>eva.g&#64;example.com</td>
-          <td>+1 555-0654</td>
-          <td>Seattle, WA</td>
-          <td>2017-11-05</td>
-          <td><span class="badge bg-danger">Resigned</span></td>
+        <tr *ngFor="let employee of employees | async">
+          <td class="text-center">{{employee.id}}</td>
+          <td class="text-center">{{employee.name}}</td>
+          <td class="text-center">{{employee.email}}</td>
+          <td class="text-center">{{employee.phone}}</td>
+          <td class="text-center">{{employee.gender}}</td>
+          <td class="text-center">{{employee.designation}}</td>
+          <td class="text-center">{{employee.salary}}</td>
+          <td class="text-center">
+            <a href="#"><span class="badge bg-primary mx-1">Edit</span></a>
+            <a href="#"><span class="badge bg-danger  mx-1">Delete</span></a>
+          </td>
         </tr>
       </tbody>
     </table>

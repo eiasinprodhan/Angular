@@ -9,6 +9,7 @@ import { Addemployee } from './addemployee/addemployee';
 import { Searchemployee } from './searchemployee/searchemployee';
 import { Contactus } from './contactus/contactus';
 import { Aboutus } from './aboutus/aboutus';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,10 @@ import { Aboutus } from './aboutus/aboutus';
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
-    provideClientHydration(withEventReplay())
+    provideClientHydration(withEventReplay()),
+    provideHttpClient(
+      withFetch()
+    )
   ],
   bootstrap: [App]
 })

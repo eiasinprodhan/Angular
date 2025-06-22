@@ -1,0 +1,40 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .gradient-bg {
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
+      color: white;
+    }
+
+    .btn-gradient {
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
+      color: white;
+      border: none;
+    }
+
+    .btn-gradient:hover {
+      background: linear-gradient(to right, #4a00e0, #8e2de2);
+      color: white;
+    }
+
+    .section-light {
+      background-color: #f3f0ff;
+    }
+
+    .card-title {
+      color: #4a00e0;
+    }
+
+    .card-text {
+      color: #555;
+    }
+
+    .full-height {
+      height: 100vh;
+    }
+
+    .icon-lg {
+      font-size: 2.5rem;
+      color: #8e2de2;
+    }
