@@ -1,17 +1,37 @@
-<div class="container border border-warning my-5 p-3 rounded">
-  <form>
-    <h4 class="mb-4 text-warning">Search Employee</h4>
-
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="searchFullName" class="form-label">Full Name</label>
-        <input
-          type="text"
-          class="form-control border border-warning"
-          id="searchFullName"
-          placeholder="Enter full name"
-        />
-      </div>
+<div class="conatiner-fluid px-3">
+  <div class="container my-3 p-0 bg-warning border border-warning rounded">
+    <h5 class="text-center my-3">
+      <i class="fa-solid fa-magnifying-glass"></i> Search Employee
+    </h5>
+    <div class="conatiner-fluid bg-light m-0 px-5 py-3">
+      <form action="employeeservlet" method="post">
+        <input type="hidden" name="action" value="search" />
+        <div class="row">
+          <div
+            class="col-md-12 d-flex flex-row justify-content-center align-items-center"
+          >
+            <input
+              name="keyword"
+              type="text"
+              class="form-control"
+              id="keyword"
+              placeholder="Search employee..."
+              style="width: 800px"
+            />
+          </div>
+          <div
+            class="col-md-12 d-flex flex-row justify-content-center align-items-center"
+          >
+            <button
+              type="submit"
+              class="btn btn-warning my-3"
+              onclick="document.getElementById('searchresult').style.display = 'block'"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
-  </form>
+  </div>
 </div>
