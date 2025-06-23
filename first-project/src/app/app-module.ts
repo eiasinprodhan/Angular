@@ -10,6 +10,8 @@ import { Searchemployee } from './searchemployee/searchemployee';
 import { Contactus } from './contactus/contactus';
 import { Aboutus } from './aboutus/aboutus';
 import { provideHttpClient, withFetch } from '@angular/common/http';
+import { Header } from './header/header';
+import { Footer } from './footer/footer';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
     Searchemployee,
     Contactus,
     Aboutus,
+    Header,
+    Footer,
   ],
   imports: [
     BrowserModule,

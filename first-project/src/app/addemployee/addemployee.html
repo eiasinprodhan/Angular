@@ -1,63 +1,120 @@
-<div class="container border border-violet my-5 p-3 rounded">
-  <h4 class="mb-4 text-violet">Add Employee</h4>
-  <form>
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="fullName" class="form-label">Full Name</label>
-        <input type="text" class="form-control" id="fullName" placeholder="Enter full name" required>
-      </div>
-      <div class="col-md-6">
-        <label for="email" class="form-label">Email Address</label>
-        <input type="email" class="form-control" id="email" placeholder="example@company.com" required>
-      </div>
+<title>EMS | Add Employee</title>
+
+<div class="container my-5">
+  <div class="card shadow-lg border-0">
+    <div class="card-header bg-violet text-white text-center">
+      <h3 class="mb-0"><i class="fas fa-user-plus me-2"></i>Add Employee</h3>
     </div>
 
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="phone" class="form-label">Phone Number</label>
-        <input type="tel" class="form-control" id="phone" placeholder="+1 555-0123" required>
+    <form class="m-5">
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="fullName" class="form-label"
+            ><i class="fas fa-user me-1"></i>Full Name</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="fullName"
+            placeholder="Enter full name"
+            required
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label"
+            ><i class="fas fa-envelope me-1"></i>Email Address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="example@company.com"
+            required
+          />
+        </div>
       </div>
-      <div class="col-md-6">
-        <label for="position" class="form-label">Position</label>
-        <input type="text" class="form-control" id="position" placeholder="e.g. Software Engineer" required>
-      </div>
-    </div>
 
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="department" class="form-label">Department</label>
-        <select class="form-select" id="department" required>
-          <option selected disabled value="">Choose...</option>
-          <option>Development</option>
-          <option>UI/UX</option>
-          <option>Testing</option>
-          <option>Infrastructure</option>
-          <option>Management</option>
-        </select>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="phone" class="form-label"
+            ><i class="fas fa-phone me-1"></i>Phone Number</label
+          >
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            placeholder="+1 555-0123"
+            required
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="position" class="form-label"
+            ><i class="fas fa-briefcase me-1"></i>Position</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="position"
+            placeholder="e.g. Software Engineer"
+            required
+          />
+        </div>
       </div>
-      <div class="col-md-6">
-        <label for="location" class="form-label">Location</label>
-        <input type="text" class="form-control" id="location" placeholder="City, State" required>
-      </div>
-    </div>
 
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="startDate" class="form-label">Start Date</label>
-        <input type="date" class="form-control" id="startDate" required>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="department" class="form-label"
+            ><i class="fas fa-building me-1"></i>Department</label
+          >
+          <select class="form-select" id="department" required>
+            <option selected disabled value="">Choose...</option>
+            <option>Development</option>
+            <option>UI/UX</option>
+            <option>Testing</option>
+            <option>Infrastructure</option>
+            <option>Management</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label for="location" class="form-label"
+            ><i class="fas fa-map-marker-alt me-1"></i>Location</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="location"
+            placeholder="City, State"
+            required
+          />
+        </div>
       </div>
-      <div class="col-md-6">
-        <label for="status" class="form-label">Employment Status</label>
-        <select class="form-select" id="status" required>
-          <option selected disabled value="">Choose...</option>
-          <option>Active</option>
-          <option>On Leave</option>
-          <option>Resigned</option>
-        </select>
-      </div>
-    </div>
 
-    <button type="submit" class="btn btn-warning">Add Employee</button>
-    <button type="reset" class="btn btn-danger ms-2">Reset</button>
-  </form>
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <label for="startDate" class="form-label"
+            ><i class="fas fa-calendar-alt me-1"></i>Start Date</label
+          >
+          <input type="date" class="form-control" id="startDate" required />
+        </div>
+        <div class="col-md-6">
+          <label for="status" class="form-label"
+            ><i class="fas fa-toggle-on me-1"></i>Employment Status</label
+          >
+          <select class="form-select" id="status" required>
+            <option selected disabled value="">Choose...</option>
+            <option>Active</option>
+            <option>On Leave</option>
+            <option>Resigned</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-violet">
+        <i class="fas fa-plus-circle me-1"></i>Add Employee
+      </button>
+      <button type="reset" class="btn btn-outline-danger ms-2">
+        <i class="fas fa-undo me-1"></i>Reset
+      </button>
+    </form>
+  </div>
 </div>

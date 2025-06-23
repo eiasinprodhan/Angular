@@ -14,3 +14,7 @@
     background: linear-gradient(to right, #8e2de2, #4a00e0);
     color: white!important;
 }
+
+.btn-violet:hover {
+    background-color: #5a35a4;
+  }
