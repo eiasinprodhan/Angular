@@ -12,6 +12,7 @@ import { Aboutus } from './aboutus/aboutus';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { Header } from './header/header';
 import { Footer } from './footer/footer';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,9 @@ import { Footer } from './footer/footer';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),

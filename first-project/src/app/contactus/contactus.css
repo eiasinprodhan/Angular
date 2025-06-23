@@ -1,0 +1,42 @@
+body {
+    background: linear-gradient(135deg, #f8f9fa, #e0e0ff);
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .card-header {
+    background: linear-gradient(90deg, #7f00ff, #e100ff);
+    color: white;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  .btn-violet {
+    background: linear-gradient(135deg, #7f00ff, #e100ff);
+    color: white;
+    border: none;
+    padding: 0.6rem 2rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    border-radius: 50px;
+  }
+
+  .btn-violet:hover {
+    background: linear-gradient(135deg, #5f00cc, #c000cc);
+    box-shadow: 0 0 10px rgba(127, 0, 255, 0.5);
+  }
+
+  .form-control {
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    font-size: 1.05rem;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .card {
+    border-radius: 1rem;
+  }
+
+  label {
+    font-weight: 600;
+    color: #4b0082;
+  }

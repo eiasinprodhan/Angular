@@ -1,0 +1,33 @@
+  body {
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .card {
+    border-radius: 1rem;
+    background-color: #ffffff;
+  }
+
+  .card-header {
+    background: linear-gradient(90deg, #7f00ff, #e100ff);
+    color: white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 1.2rem;
+  }
+
+  .card-header h3 {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+  }
+
+  .highlight {
+    color: #7f00ff;
+    font-weight: 600;
+  }
