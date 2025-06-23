@@ -5,7 +5,14 @@
 4. Now open your project in VS Code and open terminal.
 5. Now use this command to create a new Angular app "ng new your-project-name --no-standalone".
 
+
 Note: --no-standalone command help to download all important resource for Angular.
 
 #Create New Component:
 1. Run this command in VS Code terminal "ng g c component-name".
+
+#Create New Service
+1. Run this command in VS Code terminal "ng g s service/service-name.service".
+
+#Install json-server
+1. Run this command in VS Code termianl "npm install -g json-server".
