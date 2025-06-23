@@ -1,40 +1,57 @@
-    body {
-      font-family: 'Segoe UI', sans-serif;
-    }
+body {
+  font-family: "Segoe UI", sans-serif;
+}
 
-    .gradient-bg {
-      background: linear-gradient(to right, #8e2de2, #4a00e0);
-      color: white;
-    }
+.gradient-bg {
+  background: linear-gradient(270deg, #8e2de2, #4a00e0, #2b86c5, #8e2de2);
+  background-size: 800% 800%;
+  animation: gradientShift 15s ease-in-out infinite;
+  color: white;
+  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
 
-    .btn-gradient {
-      background: linear-gradient(to right, #8e2de2, #4a00e0);
-      color: white;
-      border: none;
-    }
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
-    .btn-gradient:hover {
-      background: linear-gradient(to right, #4a00e0, #8e2de2);
-      color: white;
-    }
+.btn-gradient {
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: white;
+  border: none;
+}
 
-    .section-light {
-      background-color: #f3f0ff;
-    }
+.btn-gradient:hover {
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  color: white;
+}
 
-    .card-title {
-      color: #4a00e0;
-    }
+.section-light {
+  background-color: #f3f0ff;
+}
 
-    .card-text {
-      color: #555;
-    }
+.card-title {
+  color: #4a00e0;
+}
 
-    .full-height {
-      height: 100vh;
-    }
+.card-text {
+  color: #555;
+}
 
-    .icon-lg {
-      font-size: 2.5rem;
-      color: #8e2de2;
-    }
+.full-height {
+  height: 100vh;
+}
+
+.icon-lg {
+  font-size: 2.5rem;
+  color: #8e2de2;
+}
