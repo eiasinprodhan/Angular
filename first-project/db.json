@@ -39,11 +39,11 @@
     {
       "id": "5",
       "name": "Rahamatullah",
-      "email": "rahamatullah@gmail.com",
+      "email": "rahmatullah@gmail.com",
       "phone": "+8801965321548",
       "gender": "Male",
-      "designation": "Intern Software Developer",
-      "salary": 15000
+      "designation": "Senior Software Developer",
+      "salary": 50000
     }
   ]
 }

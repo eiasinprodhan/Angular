@@ -1,5 +1,6 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { EmployeesService } from '../service/employees.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-allemployees',
@@ -11,6 +12,7 @@ export class Allemployees implements OnInit {
   employees: any;
   constructor(
     private EmployeesService: EmployeesService,
+    private router: Router,
     private cdr: ChangeDetectorRef
   ) {}
 
@@ -33,5 +35,9 @@ export class Allemployees implements OnInit {
         console.log(error);
       },
     });
+  }
+
+  updateEmployee(id: string){
+    this.router.navigate(['updateemployee', id]);
   }
 }

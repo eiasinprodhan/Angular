@@ -13,6 +13,7 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
 import { Header } from './header/header';
 import { Footer } from './footer/footer';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Updateemployee } from './updateemployee/updateemployee';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     Aboutus,
     Header,
     Footer,
+    Updateemployee,
   ],
   imports: [
     BrowserModule,

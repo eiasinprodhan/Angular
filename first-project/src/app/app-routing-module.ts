@@ -6,11 +6,13 @@ import { Addemployee } from './addemployee/addemployee';
 import { Searchemployee } from './searchemployee/searchemployee';
 import { Contactus } from './contactus/contactus';
 import { Aboutus } from './aboutus/aboutus';
+import { Updateemployee } from './updateemployee/updateemployee';
 
 const routes: Routes = [
   {path: '', component: Home},
   {path: 'allemployees', component: Allemployees},
   {path: 'addemployee', component: Addemployee},
+  {path: 'updateemployee/:id', component: Updateemployee},
   {path: 'searchemployee', component: Searchemployee},
   {path: 'contactus', component: Contactus},
   {path: 'aboutus', component: Aboutus}
