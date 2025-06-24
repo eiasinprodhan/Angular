@@ -44,15 +44,6 @@
       "gender": "Male",
       "designation": "Intern Software Developer",
       "salary": 15000
-    },
-    {
-      "id": "374c",
-      "name": "Robin Prodhan",
-      "email": "robinprodhan@gmail.com",
-      "phone": "018653215487",
-      "gender": "Male",
-      "designation": "Intern Software Developer",
-      "salary": 15000
     }
   ]
 }
