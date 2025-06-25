@@ -1,0 +1,24 @@
+<div class="container mt-5">
+  <h2 class="mb-4">Student Information</h2>
+  <table class="table table-bordered">
+    <thead class="table-light">
+      <tr>
+        <th class="text-center">ID</th>
+        <th class="text-center">Name</th>
+        <th class="text-center">Class</th>
+        <th class="text-center">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let s of students|async">
+        <td class="text-center">{{s.id}}</td>
+        <td class="text-center">{{s.name}}</td>
+        <td class="text-center">{{s.class}}</td>
+        <td class="text-center">
+          <button class="btn btn-primary btn-sm me-1" (click)="getById(s.id)">Edit</button>
+          <button class="btn btn-danger btn-sm" (click)="deleteStudent(s.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
