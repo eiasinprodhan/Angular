@@ -3,12 +3,11 @@ import { Student } from '../../models/student.model';
 import { StudentService } from '../../services/student.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-editstudent.component',
   standalone: false,
   templateUrl: './editstudent.component.html',
-  styleUrl: './editstudent.component.css'
+  styleUrl: './editstudent.component.css',
 })
 export class EditstudentComponent implements OnInit {
   id!: string;
@@ -19,32 +18,33 @@ export class EditstudentComponent implements OnInit {
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private cdr: ChangeDetectorRef
-  ){}
+  ) {}
 
   ngOnInit(): void {
-    this.id = this.activatedRoute.snapshot.params['id'];
-    this.student = new Student();
+    this.loadAllStudent();
+  }
 
+  loadAllStudent() {
+    this.id = this.activatedRoute.snapshot.params['id'];
     this.studentService.getById(this.id).subscribe({
       next: (res) => {
         this.student = res;
         this.cdr.detectChanges();
       },
       error: (err) => {
-
-      }
-    })
+        console.log(err);
+      },
+    });
   }
 
-  updateStudent(){
+  updateStudent() {
     this.studentService.updateStudent(this.id, this.student).subscribe({
-      next: (res) =>{
-        this.router.navigate([''])
+      next: (res) => {
+        this.router.navigate(['']);
       },
       error: (err) => {
-
-      }
-    })
+        console.log(err);
+      },
+    });
   }
- 
 }
