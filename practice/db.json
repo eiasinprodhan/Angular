@@ -1,19 +1,3 @@
 {
-  "students": [
-    {
-      "id": "90e4",
-      "name": "Eiasin Prodhan",
-      "class": 10
-    },
-    {
-      "id": "453a",
-      "name": "Parvej Hossain",
-      "class": 9
-    },
-    {
-      "id": "93b6",
-      "name": "Rakib Islam",
-      "class": 1
-    }
-  ]
+  "students": []
 }
