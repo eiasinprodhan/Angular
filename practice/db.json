@@ -1,3 +1,9 @@
 {
-  "students": []
+  "students": [
+    {
+      "id": "f186",
+      "name": "Eiasin Prodhan",
+      "class": 10
+    }
+  ]
 }
