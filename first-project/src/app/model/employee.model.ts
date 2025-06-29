@@ -6,4 +6,9 @@ export class Employee {
     gender!: string;
     designation!: string;
     salary!: number;
+    location!: {
+        id: number;
+        name: string;
+        photo: string;
+    }
 }

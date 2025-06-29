@@ -15,6 +15,7 @@
               <th>Email</th>
               <th>Phone</th>
               <th>Gender</th>
+              <th>Location</th>
               <th>Designation</th>
               <th>Salary</th>
               <th>Action</th>
@@ -27,6 +28,7 @@
               <td>{{ employee.email }}</td>
               <td>{{ employee.phone }}</td>
               <td>{{ employee.gender }}</td>
+              <td>{{ employee?.location.name}}</td>
               <td>{{ employee.designation }}</td>
               <td>${{ employee.salary | number:'1.0-2' }}</td>
               <td>

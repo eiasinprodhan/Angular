@@ -3,17 +3,21 @@ import { RouterModule, Routes } from '@angular/router';
 import { Home } from './home/home';
 import { Allemployees } from './allemployees/allemployees';
 import { Addemployee } from './addemployee/addemployee';
-import { Searchemployee } from './searchemployee/searchemployee';
 import { Contactus } from './contactus/contactus';
 import { Aboutus } from './aboutus/aboutus';
 import { Updateemployee } from './updateemployee/updateemployee';
+import { Viewalllocation } from './viewalllocation/viewalllocation';
+import { Addlocation } from './addlocation/addlocation';
+import { Updatelocation } from './updatelocation/updatelocation';
 
 const routes: Routes = [
   {path: '', component: Home},
   {path: 'allemployees', component: Allemployees},
   {path: 'addemployee', component: Addemployee},
   {path: 'updateemployee/:id', component: Updateemployee},
-  {path: 'searchemployee', component: Searchemployee},
+  {path: 'alllocations', component: Viewalllocation},
+  {path: 'addlocation', component: Addlocation},
+  {path: 'updatelocation/:id', component: Updatelocation},
   {path: 'contactus', component: Contactus},
   {path: 'aboutus', component: Aboutus}
 ];

@@ -6,7 +6,6 @@ import { App } from './app';
 import { Home } from './home/home';
 import { Allemployees } from './allemployees/allemployees';
 import { Addemployee } from './addemployee/addemployee';
-import { Searchemployee } from './searchemployee/searchemployee';
 import { Contactus } from './contactus/contactus';
 import { Aboutus } from './aboutus/aboutus';
 import { provideHttpClient, withFetch } from '@angular/common/http';
@@ -14,6 +13,9 @@ import { Header } from './header/header';
 import { Footer } from './footer/footer';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Updateemployee } from './updateemployee/updateemployee';
+import { Addlocation } from './addlocation/addlocation';
+import { Updatelocation } from './updatelocation/updatelocation';
+import { Viewalllocation } from './viewalllocation/viewalllocation';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { Updateemployee } from './updateemployee/updateemployee';
     Home,
     Allemployees,
     Addemployee,
-    Searchemployee,
     Contactus,
     Aboutus,
     Header,
     Footer,
     Updateemployee,
+    Addlocation,
+    Updatelocation,
+    Viewalllocation,
   ],
   imports: [
     BrowserModule,

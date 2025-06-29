@@ -7,7 +7,12 @@
       "phone": "+8801888118271",
       "gender": "Male",
       "designation": "CEO",
-      "salary": 500000
+      "salary": 500000,
+      "location": {
+      "id": "5b92",
+      "name": "Barishal",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Barisal_Launch_Terninal.jpg/1920px-Barisal_Launch_Terninal.jpg"
+    }
     },
     {
       "id": "2",
@@ -16,7 +21,12 @@
       "phone": "+88069865148487",
       "gender": "Female",
       "designation": "Project Manager",
-      "salary": 150000
+      "salary": 150000,
+      "location": {
+      "id": "7d91",
+      "name": "Dhaka",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Parliament_of_Bangladesh_%285238133496%29.jpg/1920px-Parliament_of_Bangladesh_%285238133496%29.jpg"
+    }
     },
     {
       "id": "3",
@@ -25,7 +35,12 @@
       "phone": "++8801698548758",
       "gender": "Male",
       "designation": "Senior Software Developer",
-      "salary": 100000
+      "salary": 100000,
+      "location": {
+      "id": "5b92",
+      "name": "Barishal",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Barisal_Launch_Terninal.jpg/1920px-Barisal_Launch_Terninal.jpg"
+    }
     },
     {
       "id": "4",
@@ -34,7 +49,12 @@
       "phone": "++8801658487584",
       "gender": "Male",
       "designation": "Junior Software Developer",
-      "salary": 50000
+      "salary": 50000,
+      "location": {
+      "id": "7d91",
+      "name": "Dhaka",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Parliament_of_Bangladesh_%285238133496%29.jpg/1920px-Parliament_of_Bangladesh_%285238133496%29.jpg"
+    }
     },
     {
       "id": "5",
@@ -43,7 +63,29 @@
       "phone": "+8801965321548",
       "gender": "Male",
       "designation": "Senior Software Developer",
-      "salary": 50000
+      "salary": 50000,
+      "location": {
+      "id": "5b92",
+      "name": "Barishal",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Barisal_Launch_Terninal.jpg/1920px-Barisal_Launch_Terninal.jpg"
+    }
+    }
+  ],
+  "locations": [
+    {
+      "id": "7d91",
+      "name": "Dhaka",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Parliament_of_Bangladesh_%285238133496%29.jpg/1920px-Parliament_of_Bangladesh_%285238133496%29.jpg"
+    },
+    {
+      "id": "1ea9",
+      "name": "Sylhet",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Shah_Jalal_Mazar_%2803%29.jpg/1280px-Shah_Jalal_Mazar_%2803%29.jpg"
+    },
+    {
+      "id": "5b92",
+      "name": "Barishal",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Barisal_Launch_Terninal.jpg/1920px-Barisal_Launch_Terninal.jpg"
     }
   ]
 }
