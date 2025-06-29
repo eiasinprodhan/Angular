@@ -7,8 +7,10 @@ import { Dashboard } from './components/dashboard/dashboard';
 import { Projects } from './components/projects/projects';
 import { Signin } from './components/signin/signin';
 import { Signup } from './components/signup/signup';
-import { Header } from './components/header/header';
-import { Footer } from './components/footer/footer';
+import { Buildings } from './components/buildings/buildings';
+import { Floors } from './components/floors/floors';
+import { Units } from './components/units/units';
+import { Rawmaterials } from './components/rawmaterials/rawmaterials';
 
 @NgModule({
   declarations: [
@@ -17,8 +19,10 @@ import { Footer } from './components/footer/footer';
     Projects,
     Signin,
     Signup,
-    Header,
-    Footer
+    Buildings,
+    Floors,
+    Units,
+    Rawmaterials
   ],
   imports: [
     BrowserModule,
