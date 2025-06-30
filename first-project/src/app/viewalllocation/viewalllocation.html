@@ -13,6 +13,7 @@
               <th>Id</th>
               <th>Name</th>
               <th>Photo</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -21,12 +22,12 @@
               <td>{{location.name}}</td>
               <td><img src="{{location.photo}}" height="auto" width="250px" alt="{{location.name}}"></td>
               <td>
-                <button class="btn btn-sm btn-outline-primary me-1" (click)="updateLocation(location.id)">
-                  <i class="fas fa-trash-alt"></i>Edit
+                <button class="btn btn-sm btn-outline-primary rounded-pill m-1" (click)="updateLocation(location.id)">
+                  <i class="fas fa-trash-alt"></i> Edit
                 </button>
 
-                <button class="btn btn-sm btn-outline-danger" (click)="deleteLocation(location.id)">
-                  <i class="fas fa-trash-alt"></i>Delete
+                <button class="btn btn-sm btn-outline-danger rounded-pill  m-1" (click)="deleteLocation(location.id)">
+                  <i class="fas fa-trash-alt"></i> Delete
                 </button>
               </td>
             </tr>

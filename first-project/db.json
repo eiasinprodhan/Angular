@@ -65,23 +65,9 @@
       "designation": "Senior Software Developer",
       "salary": 50000,
       "location": {
-        "id": "5b92",
-        "name": "Barishal",
-        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Barisal_Launch_Terninal.jpg/1920px-Barisal_Launch_Terninal.jpg"
-      }
-    },
-    {
-      "id": "7b47",
-      "name": "dsgdfsg",
-      "email": "rahmatullah@gmail.com",
-      "phone": "dsfgdfg",
-      "gender": "Male",
-      "designation": "CEO",
-      "salary": 100,
-      "location": {
-        "id": "5b92",
-        "name": "Barishal",
-        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Barisal_Launch_Terninal.jpg/1920px-Barisal_Launch_Terninal.jpg"
+        "id": "8589",
+        "name": "Chattogram",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Lake_of_Foy%27s_Lake.jpg/800px-Lake_of_Foy%27s_Lake.jpg"
       }
     }
   ],
@@ -105,6 +91,11 @@
       "id": "c62f",
       "name": "Rangpur",
       "photo": "https://upload.wikimedia.org/wikipedia/commons/0/04/Bird%27s-eye_view_of_BRUR.jpg"
+    },
+    {
+      "id": "8589",
+      "name": "Chattogram",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Lake_of_Foy%27s_Lake.jpg/800px-Lake_of_Foy%27s_Lake.jpg"
     }
   ]
 }

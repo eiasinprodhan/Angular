@@ -1,6 +1,6 @@
 <title>EMS ✨ | All Employees</title>
 
-<div class="container my-5">
+<div class="container-fluid my-5">
   <div class="card shadow-lg border-0">
     <div class="card-header text-center">
       <h3 class="mb-0"><i class="fas fa-users me-2"></i>All Employees</h3>
@@ -30,13 +30,13 @@
               <td>{{ employee.gender }}</td>
               <td>{{ employee?.location.name}}</td>
               <td>{{ employee.designation }}</td>
-              <td>${{ employee.salary | number:'1.0-2' }}</td>
+              <td>{{ employee.salary | currency }}</td>
               <td>
-                <button class="btn btn-sm btn-outline-primary me-1" (click)="updateEmployee(employee.id)">
+                <button class="btn btn-sm btn-outline-primary m-1" style="width: 100px;" (click)="updateEmployee(employee.id)">
                   <i class="fas fa-trash-alt"></i>Edit
                 </button>
 
-                <button class="btn btn-sm btn-outline-danger" (click)="deleteEmployee(employee.id)">
+                <button class="btn btn-sm btn-outline-danger m-1"  style="width: 100px;" (click)="deleteEmployee(employee.id)">
                   <i class="fas fa-trash-alt"></i>Delete
                 </button>
               </td>
