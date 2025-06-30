@@ -111,9 +111,15 @@
             <option value="">Choose Your Designation</option>
             <option value="CEO">CEO</option>
             <option value="Project Manager">Project Manager</option>
-            <option value="Senior Software Developer">Senior Software Developer</option>
-            <option value="Junior Software Developer">Junior Software Developer</option>
-            <option value="Intern Software Developer">Intern Software Developer</option>
+            <option value="Senior Software Developer">
+              Senior Software Developer
+            </option>
+            <option value="Junior Software Developer">
+              Junior Software Developer
+            </option>
+            <option value="Intern Software Developer">
+              Intern Software Developer
+            </option>
           </select>
         </div>
         <div class="col-md-6">
@@ -129,6 +135,26 @@
             placeholder="e.g. 60000"
             required
           />
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <label for="location" class="form-label">
+            <i class="fa-solid fa-location-dot"></i> Location
+          </label>
+          <select
+            id="location"
+            name="location"
+            class="form-select"
+            [(ngModel)]="employee.location"
+            [compareWith]="compareLocation"
+          >
+            <option value="">Choose Your Location</option>
+            <option *ngFor="let loc of locations" [ngValue]="loc">
+              {{ loc.name }}
+            </option>
+          </select>
         </div>
       </div>
 
