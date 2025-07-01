@@ -1,0 +1,50 @@
+body {
+      background: linear-gradient(135deg, #fdfbfb, #ebedee);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .card {
+      border-radius: 1rem;
+    }
+
+    .card-header {
+      background: linear-gradient(90deg, #7f00ff, #e100ff);
+      color: white;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+    }
+
+    label.form-label {
+      font-weight: 600;
+      color: #4b0082;
+    }
+
+    .form-control,
+    .form-check-input {
+      border-radius: 0.5rem;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+      font-size: 1rem;
+    }
+
+    .btn-violet {
+      background: linear-gradient(135deg, #7f00ff, #e100ff);
+      color: white;
+      border: none;
+      padding: 0.6rem 1.8rem;
+      font-weight: 600;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-violet:hover {
+      background: linear-gradient(135deg, #5f00cc, #c000cc);
+      box-shadow: 0 0 10px rgba(127, 0, 255, 0.3);
+    }
+
+    .btn-outline-danger {
+      border-radius: 50px;
+    }
+
+    .form-check-label {
+      margin-right: 1rem;
+    }

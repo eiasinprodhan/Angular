@@ -98,7 +98,14 @@
       "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Lake_of_Foy%27s_Lake.jpg/800px-Lake_of_Foy%27s_Lake.jpg"
     }
   ],
-  "users":[
-    
+  "users": [
+    {
+      "id": "cb51",
+      "name": "Eiasin Khan",
+      "email": "eiasinkhan@gmail.com",
+      "password": "12345",
+      "photo": "10",
+      "role": "user"
+    }
   ]
 }

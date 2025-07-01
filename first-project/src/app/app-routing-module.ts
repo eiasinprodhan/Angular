@@ -9,6 +9,8 @@ import { Updateemployee } from './updateemployee/updateemployee';
 import { Viewalllocation } from './viewalllocation/viewalllocation';
 import { Addlocation } from './addlocation/addlocation';
 import { Updatelocation } from './updatelocation/updatelocation';
+import { Registration } from './registration/registration';
+import { Login } from './login/login';
 
 const routes: Routes = [
   {path: '', component: Home},
@@ -19,7 +21,9 @@ const routes: Routes = [
   {path: 'addlocation', component: Addlocation},
   {path: 'updatelocation/:id', component: Updatelocation},
   {path: 'contactus', component: Contactus},
-  {path: 'aboutus', component: Aboutus}
+  {path: 'aboutus', component: Aboutus}, 
+  {path: 'registration', component: Registration},
+  {path: 'login', component: Login}
 ];
 
 @NgModule({

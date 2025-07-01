@@ -16,6 +16,8 @@ import { Updateemployee } from './updateemployee/updateemployee';
 import { Addlocation } from './addlocation/addlocation';
 import { Updatelocation } from './updatelocation/updatelocation';
 import { Viewalllocation } from './viewalllocation/viewalllocation';
+import { Registration } from './registration/registration';
+import { Login } from './login/login';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { Viewalllocation } from './viewalllocation/viewalllocation';
     Addlocation,
     Updatelocation,
     Viewalllocation,
+    Registration,
+    Login,
   ],
   imports: [
     BrowserModule,
