@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-dark">
   <div class="container">
-    <a class="navbar-brand text-light" href="/">
+    <a class="navbar-brand text-light" routerLink="/">
       <h5><i class="fa-solid fa-users-gear"></i> EMS</h5>
     </a>
     <button
@@ -19,41 +19,41 @@
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 
         <li class="nav-item">
-          <a class="nav-link text-light" href="/"><i class="fa-solid fa-house"></i> Home</a>
+          <a class="nav-link text-light" routerLink="/"><i class="fa-solid fa-house"></i> Home</a>
         </li>
 
         <!-- Employee Dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-light" href="#" id="employeeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-light" routerLink="#" id="employeeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-users"></i> Employee
           </a>
           <ul class="dropdown-menu bg-violet border-violet" aria-labelledby="employeeDropdown">
-            <li><a class="dropdown-item text-light" href="allemployees"><i class="fa-solid fa-users"></i> All Employees</a></li>
-            <li><a class="dropdown-item text-light" href="addemployee"><i class="fa-solid fa-user-plus"></i> Add Employee</a></li>
+            <li><a class="dropdown-item text-light" routerLink="allemployees"><i class="fa-solid fa-users"></i> All Employees</a></li>
+            <li><a class="dropdown-item text-light" routerLink="addemployee"><i class="fa-solid fa-user-plus"></i> Add Employee</a></li>
           </ul>
         </li>
 
         <!-- Location Dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-light" href="#" id="locationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-light" routerLink="#" id="locationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-location-dot"></i> Location
           </a>
           <ul class="dropdown-menu bg-violet border-violet" aria-labelledby="locationDropdown">
-            <li><a class="dropdown-item text-light" href="alllocations"><i class="fa-solid fa-location-dot"></i> All Locations</a></li>
-            <li><a class="dropdown-item text-light" href="addlocation"><i class="fa-solid fa-location-dot"></i> Add Location</a></li>
+            <li><a class="dropdown-item text-light" routerLink="alllocations"><i class="fa-solid fa-location-dot"></i> All Locations</a></li>
+            <li><a class="dropdown-item text-light" routerLink="addlocation"><i class="fa-solid fa-location-dot"></i> Add Location</a></li>
           </ul>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link text-light" href="contactus"><i class="fa-solid fa-phone"></i> Contact Us</a>
+          <a class="nav-link text-light" routerLink="contactus"><i class="fa-solid fa-phone"></i> Contact Us</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link text-light" href="aboutus"><i class="fa-solid fa-users-gear"></i> About Us</a>
+          <a class="nav-link text-light" routerLink="aboutus"><i class="fa-solid fa-users-gear"></i> About Us</a>
         </li>
       </ul>
-      <a href="registration"><button class="btn btn-violet mx-1">Registration</button></a>
-      <a href="login"><button class="btn btn-violet mx-1">Login</button></a>
+      <a routerLink="registration"><button class="btn btn-violet mx-1">Registration</button></a>
+      <a routerLink="login"><button class="btn btn-violet mx-1">Login</button></a>
     </div>
   </div>
 </nav>
