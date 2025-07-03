@@ -14,6 +14,7 @@ import { Units } from './components/units/units';
 import { Rawmaterials } from './components/rawmaterials/rawmaterials';
 import { Allstages } from './components/allstages/allstages';
 import { Workers } from './components/workers/workers';
+import { Error } from './components/error/error';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { Workers } from './components/workers/workers';
     Units,
     Rawmaterials,
     Allstages,
-    Workers
+    Workers,
+    Error
   ],
   imports: [
     BrowserModule,

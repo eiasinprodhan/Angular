@@ -105,6 +105,14 @@
       "email": "eiasinkhan@gmail.com",
       "password": "12345",
       "photo": "10",
+      "role": "admin"
+    },
+    {
+      "id": "1b5a",
+      "name": "Eiasin Prodhan",
+      "email": "eiasinprodhan@gmail.com",
+      "password": "12345",
+      "photo": "nothing",
       "role": "user"
     }
   ]
