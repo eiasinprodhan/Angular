@@ -1,0 +1,169 @@
+<div class="card">
+  <div class="row card-header flex-column flex-md-row border-bottom mx-0 px-3">
+    <div
+      class="col-md-auto me-auto mt-0 d-md-flex justify-content-start align-items-center"
+    >
+      <h5 class="card-title mb-0 text-md-start text-center">
+        Add New Projects
+      </h5>
+    </div>
+    <div
+      class="col-md-auto ms-auto mt-2 mt-md-0 d-flex justify-content-end align-items-center"
+    >
+      <a routerLink="/listprojects">
+        <button type="button" class="btn btn-primary">Return</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="card-body">
+    <form>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <!-- Project Name -->
+          <div class="mb-3">
+            <label for="projectName" class="form-label">Project Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="projectName"
+              name="name"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <!-- Location -->
+          <div class="mb-3">
+            <label for="location" class="form-label">Project Location</label>
+            <input
+              type="text"
+              class="form-control"
+              id="location"
+              name="location"
+              required
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Start Date -->
+          <div class="mb-3">
+            <label for="startDate" class="form-label">Start Date</label>
+            <input
+              type="date"
+              class="form-control"
+              id="startDate"
+              name="start_date"
+              required
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- End Date -->
+          <div class="mb-3">
+            <label for="completionDate" class="form-label">End Date</label>
+            <input
+              type="date"
+              class="form-control"
+              id="completionDate"
+              name="expected_completion_date"
+              required
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Budget -->
+          <div class="mb-3">
+            <label for="developerName" class="form-label">Budget</label>
+            <input
+              type="text"
+              class="form-control"
+              id="developerName"
+              name="developer_name"
+              required
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Status -->
+          <div class="mb-3">
+            <label for="status" class="form-label">Status</label>
+            <select class="form-select" id="status" name="status" required>
+              <option selected disabled value="">Select Status</option>
+              <option value="Planning">Planning</option>
+              <option value="Approved">Approved</option>
+              <option value="Under Construction">Under Construction</option>
+              <option value="Completed">Completed</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Project Type -->
+          <div class="mb-3">
+            <label for="projectType" class="form-label">Project Type</label>
+            <select
+              class="form-select"
+              id="projectType"
+              name="project_type"
+              required
+            >
+              <option selected disabled value="">Select Type</option>
+              <option value="Residential">Residential</option>
+              <option value="Commercial">Commercial</option>
+              <option value="Mixed-use">Mixed Use</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <!-- Project Manager -->
+          <div class="mb-3">
+            <label for="developerName" class="form-label"
+              >Project Manager</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="developerName"
+              name="developer_name"
+              required
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Description -->
+          <div class="mb-3">
+            <label for="description" class="form-label"
+              >Project Description</label
+            >
+            <textarea
+              class="form-control"
+              id="description"
+              name="description"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Submit Project</button>
+      </div>
+    </form>
+  </div>
+</div>
