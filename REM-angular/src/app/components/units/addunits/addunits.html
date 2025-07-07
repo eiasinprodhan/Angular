@@ -1,0 +1,309 @@
+<div class="main-content">
+  <div class="page-content">
+    <div class="container-fluid">
+      <!-- page title -->
+      <div class="page-title-box">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h6 class="page-title">
+              <i class="fa-solid fa-home"></i> Add Unit
+            </h6>
+          </div>
+          <div class="col-md-4">
+            <div class="float-end d-none d-md-block">
+              <a href="/viewunits">
+                <button class="btn btn-primary">
+                  <i class="mdi mdi-arrow-left me-2"></i> Back to List
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end page title -->
+
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <form>
+                <!-- Floor ID -->
+                <div class="row mb-3">
+                  <label for="floor_id" class="col-sm-2 col-form-label"
+                    >Floor ID</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="number"
+                      id="floor_id"
+                      name="floor_id"
+                      class="form-control"
+                      value="1"
+                      readonly
+                    />
+                  </div>
+                </div>
+
+                <!-- Unit Number -->
+                <div class="row mb-3">
+                  <label for="unit_number" class="col-sm-2 col-form-label"
+                    >Unit Number</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      id="unit_number"
+                      name="unit_number"
+                      class="form-control"
+                      value="A101"
+                    />
+                  </div>
+                </div>
+
+                <!-- Unit Type -->
+                <div class="row mb-3">
+                  <label for="unit_type" class="col-sm-2 col-form-label"
+                    >Unit Type</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      id="unit_type"
+                      name="unit_type"
+                      class="form-control"
+                      value="2BHK"
+                    />
+                  </div>
+                </div>
+
+                <!-- Carpet Area -->
+                <div class="row mb-3">
+                  <label for="carpet_area" class="col-sm-2 col-form-label"
+                    >Carpet Area (sqft)</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="number"
+                      id="carpet_area"
+                      name="carpet_area"
+                      class="form-control"
+                      value="900"
+                    />
+                  </div>
+                </div>
+
+                <!-- Built-up Area -->
+                <div class="row mb-3">
+                  <label for="built_up_area" class="col-sm-2 col-form-label"
+                    >Built-up Area (sqft)</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="number"
+                      id="built_up_area"
+                      name="built_up_area"
+                      class="form-control"
+                      value="1100"
+                    />
+                  </div>
+                </div>
+
+                <!-- Price Per Sqft -->
+                <div class="row mb-3">
+                  <label for="price_per_sqft" class="col-sm-2 col-form-label"
+                    >Price per Sqft</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="number"
+                      id="price_per_sqft"
+                      name="price_per_sqft"
+                      class="form-control"
+                      value="50"
+                    />
+                  </div>
+                </div>
+
+                <!-- Total Price -->
+                <div class="row mb-3">
+                  <label for="total_price" class="col-sm-2 col-form-label"
+                    >Total Price</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="number"
+                      id="total_price"
+                      name="total_price"
+                      class="form-control"
+                      value="45000"
+                    />
+                  </div>
+                </div>
+
+                <!-- Status -->
+                <div class="row mb-3">
+                  <label for="status" class="col-sm-2 col-form-label"
+                    >Status</label
+                  >
+                  <div class="col-sm-10">
+                    <select id="status" name="status" class="form-select">
+                      <option selected>Available</option>
+                      <option>Booked</option>
+                      <option>Sold</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Facing -->
+                <div class="row mb-3">
+                  <label for="facing" class="col-sm-2 col-form-label"
+                    >Facing</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      id="facing"
+                      name="facing"
+                      class="form-control"
+                      value="East"
+                    />
+                  </div>
+                </div>
+
+                <!-- Balcony Count -->
+                <div class="row mb-3">
+                  <label for="balcony_count" class="col-sm-2 col-form-label"
+                    >Balcony Count</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="number"
+                      id="balcony_count"
+                      name="balcony_count"
+                      class="form-control"
+                      value="1"
+                    />
+                  </div>
+                </div>
+
+                <!-- Bathroom Count -->
+                <div class="row mb-3">
+                  <label for="bathroom_count" class="col-sm-2 col-form-label"
+                    >Bathroom Count</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="number"
+                      id="bathroom_count"
+                      name="bathroom_count"
+                      class="form-control"
+                      value="2"
+                    />
+                  </div>
+                </div>
+
+                <!-- Parking Slots -->
+                <div class="row mb-3">
+                  <label for="parking_slots" class="col-sm-2 col-form-label"
+                    >Parking Slots</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="number"
+                      id="parking_slots"
+                      name="parking_slots"
+                      class="form-control"
+                      value="1"
+                    />
+                  </div>
+                </div>
+
+                <!-- Unit Plan URL -->
+                <div class="row mb-3">
+                  <label for="unit_plan_url" class="col-sm-2 col-form-label"
+                    >Unit Plan URL</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="url"
+                      id="unit_plan_url"
+                      name="unit_plan_url"
+                      class="form-control"
+                      value="https://.../unit1.pdf"
+                    />
+                  </div>
+                </div>
+
+                <!-- Images URLs -->
+                <div class="row mb-3">
+                  <label for="images" class="col-sm-2 col-form-label"
+                    >Images URLs</label
+                  >
+                  <div class="col-sm-10">
+                    <textarea
+                      id="images"
+                      name="images"
+                      class="form-control"
+                      rows="3"
+                      readonly
+                    >
+https://.../u1.jpg
+                  </textarea
+                    >
+                  </div>
+                </div>
+
+                <!-- Booking Date -->
+                <div class="row mb-3">
+                  <label for="booking_date" class="col-sm-2 col-form-label"
+                    >Booking Date</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="date"
+                      id="booking_date"
+                      name="booking_date"
+                      class="form-control"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <!-- Buyer ID -->
+                <div class="row mb-3">
+                  <label for="buyer_id" class="col-sm-2 col-form-label"
+                    >Buyer ID</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      id="buyer_id"
+                      name="buyer_id"
+                      class="form-control"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="row">
+                  <div class="col-sm-10 offset-sm-2">
+                    <button type="submit" class="btn btn-primary">
+                      <i class="mdi mdi-content-save me-2"></i> Save Unit
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- card-body -->
+          </div>
+          <!-- card -->
+        </div>
+        <!-- col-12 -->
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container-fluid -->
+  </div>
+  <!-- page-content -->
+</div>

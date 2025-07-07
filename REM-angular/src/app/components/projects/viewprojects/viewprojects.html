@@ -1,0 +1,105 @@
+<div class="main-content">
+  <div class="page-content">
+    <div class="container-fluid">
+      <!-- start page title -->
+      <div class="page-title-box">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h6 class="page-title">
+              <i class="fa-solid fa-city"></i> Projects List
+            </h6>
+          </div>
+          <div class="col-md-4">
+            <div class="float-end d-none d-md-block">
+              <div class="dropdown">
+                <a routerLink="/addprojects">
+                  <button class="btn btn-primary dropdown-toggle" type="button">
+                    <i class="mdi mdi-plus me-2"></i>Add Project
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end page title -->
+
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <div
+                id="datatable_wrapper"
+                class="dataTables_wrapper dt-bootstrap4 no-footer"
+              >
+                <div class="row"></div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <table
+                      id="datatable"
+                      class="table table-bordered dt-responsive nowrap dataTable no-footer dtr-inline"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0px;
+                        width: 100%;
+                      "
+                      aria-describedby="datatable_info"
+                    >
+                      <thead>
+                        <tr>
+                          <th>Project ID</th>
+                          <th>Name</th>
+                          <th>City</th>
+                          <th>District</th>
+                          <th>Type</th>
+                          <th>Status</th>
+                          <th>Start Date</th>
+                          <th>Completion Date</th>
+                          <th>Buildings</th>
+                          <th>Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let project of projects | async">
+                          <td class="dtr-control sorting_1" tabindex="0">
+                            {{ project.project_id }}
+                          </td>
+                          <td>{{ project.name }}</td>
+                          <td>{{ project.location.city }}</td>
+                          <td>{{ project.location.district }}</td>
+                          <td>{{ project.project_type }}</td>
+                          <td>{{ project.status }}</td>
+                          <td>{{ project.start_date }}</td>
+                          <td>{{ project.expected_completion_date }}</td>
+                          <td>{{ project.number_of_buildings }}</td>
+                          <td>
+                            <!-- Actions (edit/delete/view) -->
+                            <button class="btn btn-sm btn-info me-1">
+                              <i class="mdi mdi-eye"></i>
+                            </button>
+                            <button class="btn btn-sm btn-warning me-1">
+                              <i class="mdi mdi-pencil"></i>
+                            </button>
+                            <button class="btn btn-sm btn-danger">
+                              <i class="mdi mdi-delete"></i>
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card-body -->
+          </div>
+          <!-- card -->
+        </div>
+        <!-- col-12 -->
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container-fluid -->
+  </div>
+  <!-- page-content -->
+</div>

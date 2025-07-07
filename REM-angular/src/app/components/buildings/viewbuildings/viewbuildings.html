@@ -1,0 +1,99 @@
+<div class="main-content">
+  <div class="page-content">
+    <div class="container-fluid">
+      <!-- start page title -->
+      <div class="page-title-box">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h6 class="page-title">
+              <i class="fa-solid fa-building"></i> Buildings List
+            </h6>
+          </div>
+          <div class="col-md-4">
+            <div class="float-end d-none d-md-block">
+              <div class="dropdown">
+                <a routerLink="/addbuildings">
+                  <button class="btn btn-primary dropdown-toggle" type="button">
+                    <i class="mdi mdi-plus me-2"></i>Add Building
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end page title -->
+
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <div
+                id="datatable_wrapper"
+                class="dataTables_wrapper dt-bootstrap4 no-footer"
+              >
+                <div class="row"></div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <table
+                      id="datatable"
+                      class="table table-bordered dt-responsive nowrap dataTable no-footer dtr-inline"
+                      style="
+                        border-collapse: collapse;
+                        border-spacing: 0px;
+                        width: 100%;
+                      "
+                      aria-describedby="datatable_info"
+                    >
+                      <thead>
+                        <tr>
+                          <th>Building ID</th>
+                          <th>Project ID</th>
+                          <th>Name</th>
+                          <th>Type</th>
+                          <th>Total Floors</th>
+                          <th>Total Units</th>
+                          <th>Status</th>
+                          <th>Start Date</th>
+                          <th>End Date</th>
+                          <th>Actions</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr class="" *ngFor="let building of buildings|async">
+                          <td class="dtr-control sorting_1" tabindex="0">
+                            {{building.building_id}}
+                          </td>
+                          <td>{{building.project_id}}</td>
+                          <td>{{building.name}}</td>
+                          <td>{{building.type}}</td>
+                          <td>{{building.total_floors}}</td>
+                          <td>{{building.total_units}}</td>
+                          <td>{{building.construction_status}}</td>
+                          <td>{{building.start_date}}</td>
+                          <td>{{building.completion_date}}</td>
+                          <td>
+                            <button class="btn btn-sm btn-info me-1">
+                              <i class="mdi mdi-eye"></i>
+                            </button>
+                            <button class="btn btn-sm btn-warning me-1">
+                              <i class="mdi mdi-pencil"></i>
+                            </button>
+                            <button class="btn btn-sm btn-danger">
+                              <i class="mdi mdi-delete"></i>
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
