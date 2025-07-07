@@ -112,7 +112,7 @@
       "name": "Eiasin Prodhan",
       "email": "eiasinprodhan@gmail.com",
       "password": "12345",
-      "photo": "nothing",
+      "photo": "https://avatars.githubusercontent.com/u/196037667?v=4",
       "role": "user"
     },
     {
@@ -120,7 +120,15 @@
       "name": "Parvej Alam",
       "email": "parvej@gmail.com",
       "password": "12345",
-      "photo": "no-image",
+      "photo": "https://avatars.githubusercontent.com/u/196035214?v=4",
+      "role": "user"
+    },
+    {
+      "id": "453c",
+      "name": "Rahmat Ullah",
+      "email": "rahmatullah@gmail.com",
+      "password": "12345",
+      "photo": "https://avatars.githubusercontent.com/u/108518708?v=4",
       "role": "user"
     }
   ]

@@ -20,6 +20,7 @@ import { Registration } from './registration/registration';
 import { Login } from './login/login';
 import { Userprofile } from './components/userprofile/userprofile';
 import { Adminprofile } from './components/adminprofile/adminprofile';
+import { Logout } from './components/logout/logout';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { Adminprofile } from './components/adminprofile/adminprofile';
     Login,
     Userprofile,
     Adminprofile,
+    Logout,
   ],
   imports: [
     BrowserModule,

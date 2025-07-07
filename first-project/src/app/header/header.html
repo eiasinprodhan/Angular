@@ -52,8 +52,19 @@
           <a class="nav-link text-light" routerLink="aboutus"><i class="fa-solid fa-users-gear"></i> About Us</a>
         </li>
       </ul>
-      <a routerLink="registration"><button class="btn btn-violet mx-1">Registration</button></a>
-      <a routerLink="login"><button class="btn btn-violet mx-1">Login</button></a>
+
+       <!-- Logged in -->
+      <ng-container *ngIf="role === 'admin' || role === 'user'">
+        <button class="btn btn-violet mx-1" routerLink="userprofile">Profile</button>
+        <button class="btn btn-violet mx-1" routerLink="logout">Log Out</button>
+      </ng-container>
+
+      <!-- Not logged in -->
+      <ng-container *ngIf="role !== 'admin' && role !== 'user'">
+        <button class="btn btn-violet mx-1" routerLink="registration">Registration</button>
+        <button class="btn btn-violet mx-1" routerLink="login">Login</button>
+      </ng-container>
+      
     </div>
   </div>
 </nav>

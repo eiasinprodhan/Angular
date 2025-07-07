@@ -13,6 +13,7 @@ import { Registration } from './registration/registration';
 import { Login } from './login/login';
 import { Userprofile } from './components/userprofile/userprofile';
 import { Adminprofile } from './components/adminprofile/adminprofile';
+import { Logout } from './components/logout/logout';
 
 const routes: Routes = [
   {path: '', component: Home},
@@ -27,7 +28,8 @@ const routes: Routes = [
   {path: 'registration', component: Registration},
   {path: 'login', component: Login},
   {path: 'userprofile', component: Userprofile},
-  {path: 'adminprofile', component: Adminprofile}
+  {path: 'adminprofile', component: Adminprofile},
+  {path: 'logout', component: Logout}
 ];
 
 @NgModule({
