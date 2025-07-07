@@ -18,6 +18,8 @@ import { Updatelocation } from './updatelocation/updatelocation';
 import { Viewalllocation } from './viewalllocation/viewalllocation';
 import { Registration } from './registration/registration';
 import { Login } from './login/login';
+import { Userprofile } from './components/userprofile/userprofile';
+import { Adminprofile } from './components/adminprofile/adminprofile';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { Login } from './login/login';
     Viewalllocation,
     Registration,
     Login,
+    Userprofile,
+    Adminprofile,
   ],
   imports: [
     BrowserModule,

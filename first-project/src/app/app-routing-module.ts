@@ -11,6 +11,8 @@ import { Addlocation } from './addlocation/addlocation';
 import { Updatelocation } from './updatelocation/updatelocation';
 import { Registration } from './registration/registration';
 import { Login } from './login/login';
+import { Userprofile } from './components/userprofile/userprofile';
+import { Adminprofile } from './components/adminprofile/adminprofile';
 
 const routes: Routes = [
   {path: '', component: Home},
@@ -23,7 +25,9 @@ const routes: Routes = [
   {path: 'contactus', component: Contactus},
   {path: 'aboutus', component: Aboutus}, 
   {path: 'registration', component: Registration},
-  {path: 'login', component: Login}
+  {path: 'login', component: Login},
+  {path: 'userprofile', component: Userprofile},
+  {path: 'adminprofile', component: Adminprofile}
 ];
 
 @NgModule({

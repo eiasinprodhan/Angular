@@ -114,6 +114,14 @@
       "password": "12345",
       "photo": "nothing",
       "role": "user"
+    },
+    {
+      "id": "97a6",
+      "name": "Parvej Alam",
+      "email": "parvej@gmail.com",
+      "password": "12345",
+      "photo": "no-image",
+      "role": "user"
     }
   ]
 }
