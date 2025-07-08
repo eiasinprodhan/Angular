@@ -18,7 +18,8 @@
           class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto mt-0"
         >
           <a routerLink="/addprojects">
-            <button class="btn btn-primary" type="button">Add New Projects
+            <button class="btn btn-primary" type="button">
+              <i class="fa-solid fa-plus mx-1"></i>Add New Projects
             </button>
           </a>
         </div>
@@ -79,99 +80,55 @@
             </colgroup>
             <thead>
               <tr>
-                <th
-                  data-dt-column="0"
-                  class="control dt-orderable-none"
-                  rowspan="1"
-                  colspan="1"
-                  aria-label=""
-                >
-                  <span class="dt-column-title"></span
-                  ><span class="dt-column-order"></span>
-                </th>
-                <th
-                  data-dt-column="1"
-                  rowspan="1"
-                  colspan="1"
-                  class="dt-select dt-orderable-none"
-                  aria-label=""
-                >
-                  <span class="dt-column-title"></span
-                  ><span class="dt-column-order"></span>
-                </th>
-                <th
-                  data-dt-column="3"
-                  rowspan="1"
-                  colspan="1"
-                  class="dt-orderable-asc dt-orderable-desc"
-                  aria-label="Name: Activate to sort"
-                  tabindex="0"
-                >
-                  <span class="dt-column-title" role="button">Name</span
-                  ><span class="dt-column-order"></span>
-                </th>
-                <th
-                  data-dt-column="4"
-                  rowspan="1"
-                  colspan="1"
-                  class="dt-orderable-asc dt-orderable-desc"
-                  aria-label="Email: Activate to sort"
-                  tabindex="0"
-                >
-                  <span class="dt-column-title" role="button">Email</span
-                  ><span class="dt-column-order"></span>
-                </th>
-                <th
-                  data-dt-column="5"
-                  rowspan="1"
-                  colspan="1"
-                  class="dt-orderable-asc dt-orderable-desc"
-                  aria-label="Date: Activate to sort"
-                  tabindex="0"
-                >
-                  <span class="dt-column-title" role="button">Date</span
-                  ><span class="dt-column-order"></span>
-                </th>
-                <th
-                  data-dt-column="6"
-                  rowspan="1"
-                  colspan="1"
-                  class="dt-orderable-asc dt-orderable-desc"
-                  aria-label="Salary: Activate to sort"
-                  tabindex="0"
-                >
-                  <span class="dt-column-title" role="button">Salary</span
-                  ><span class="dt-column-order"></span>
-                </th>
-                <th
-                  data-dt-column="7"
-                  rowspan="1"
-                  colspan="1"
-                  class="dt-orderable-asc dt-orderable-desc"
-                  aria-label="Status: Activate to sort"
-                  tabindex="0"
-                >
-                  <span class="dt-column-title" role="button">Status</span
-                  ><span class="dt-column-order"></span>
-                </th>
-                <th
-                  data-dt-column="8"
-                  rowspan="1"
-                  colspan="1"
-                  class="dt-orderable-none"
-                  aria-label="Actions"
-                >
-                  <span class="dt-column-title">Actions</span
-                  ><span class="dt-column-order"></span>
-                </th>
+                <th class="dt-orderable-asc dt-orderable-desc">ID</th>
+                <th class="dt-orderable-asc dt-orderable-desc">Project Name</th>
+                <th class="dt-orderable-asc dt-orderable-desc">Location</th>
+                <th class="dt-orderable-asc dt-orderable-desc">Budget</th>
+                <th class="dt-orderable-asc dt-orderable-desc">Start Date</th>
+                <th class="dt-orderable-asc dt-orderable-desc">End Date</th>
+                <th class="dt-orderable-asc dt-orderable-desc">Status</th>
+                <th class="dt-orderable-asc dt-orderable-desc">Action</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td colspan="8" class="dt-empty">Loading...</td>
+              <tr *ngFor="let project of projects | async">
+                <td>{{ project.id }}</td>
+                <td>{{ project.name }}</td>
+                <td>{{ project.location }}</td>
+                <td>{{ project.budget | currency }}</td>
+                <td>{{ project.startDate | date }}</td>
+                <td>{{ project.endDate | date }}</td>
+                <td>
+                  <span
+                    [ngClass]="getStatusClass(project.status)"
+                    class="badge"
+                  >
+                    {{ project.status }}
+                  </span>
+                </td>
+                <td>
+                  <div class="d-flex gap-2">
+                    <!-- View -->
+                    <button class="btn btn-sm btn-outline-info" (click)="viewProjects(project.id)">
+                      <i class="fa fa-eye"></i>
+                    </button>
+
+                    <!-- Edit -->
+                    <button class="btn btn-sm btn-outline-primary" (click)="editProjects(project.id)">
+                      <i class="fa fa-edit"></i>
+                    </button>
+
+                    <!-- Delete -->
+                    <button
+                      class="btn btn-sm btn-outline-danger"
+                      (click)="deleteProjects(project.id)"
+                    >
+                      <i class="fa fa-trash"></i>
+                    </button>
+                  </div>
+                </td>
               </tr>
             </tbody>
-            <tfoot></tfoot>
           </table>
         </div>
       </div>
@@ -197,5 +154,3 @@
     </div>
   </div>
 </div>
-
-

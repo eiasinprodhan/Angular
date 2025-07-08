@@ -8,6 +8,8 @@ import { Addprojects } from './components/projects/addprojects/addprojects';
 import { Editprojects } from './components/projects/editprojects/editprojects';
 import { Listprojects } from './components/projects/listprojects/listprojects';
 import { Viewprojects } from './components/projects/viewprojects/viewprojects';
+import { provideHttpClient, withFetch } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,12 +22,15 @@ import { Viewprojects } from './components/projects/viewprojects/viewprojects';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
-    provideClientHydration(withEventReplay())
+    provideClientHydration(withEventReplay()),
+    provideHttpClient(withFetch())
   ],
   bootstrap: [App]
 })

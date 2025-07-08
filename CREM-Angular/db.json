@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "id": "9b8a",
+      "name": "Project A",
+      "location": "Dhanmondi",
+      "startDate": "2025-07-15",
+      "endDate": "2025-07-15",
+      "budget": 10000,
+      "status": "Planning",
+      "projectType": "Residential",
+      "projectManager": "Eiasin Prodhan",
+      "description": "Nothing..."
+    },
+    {
+      "id": "fbc5",
+      "name": "jfghjfghj",
+      "location": "gjfhgjhgf",
+      "startDate": "2025-07-11",
+      "endDate": "2025-07-12",
+      "budget": 10,
+      "status": "Under Construction",
+      "projectType": "Residential",
+      "projectManager": "ghjfghhj",
+      "description": "ghjufghj"
+    }
+  ]
+}
