@@ -23,14 +23,14 @@ export class ProjectService {
   }
 
   viewProjects(id: string): Observable<any> {
-    return this.http.get(`${this.baseUrl}/${id}`);
+    return this.http.get(this.baseUrl+'/'+id);
   }
 
   editProjects(id: string, project: Project): Observable<any> {
-    return this.http.put(`${this.baseUrl}/${id}`, project);
+    return this.http.put(this.baseUrl+'/'+id, project);
   }
 
   deleteProjects(id: string): Observable<any> {
-    return this.http.delete(`${this.baseUrl}/${id}`);
+    return this.http.delete(this.baseUrl+'/'+id);
   }
 }

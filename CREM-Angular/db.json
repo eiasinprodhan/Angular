@@ -11,6 +11,18 @@
       "projectType": "Residential",
       "projectManager": "Eiasin Prodhan",
       "description": "Skyline Heights is a multi-phase residential construction project aimed at developing a modern apartment complex comprising four mid-rise buildings, underground parking, and landscaped recreational areas. The total built-up area spans approximately 200,000 square feet, with 250 residential units ranging from one to three-bedroom apartments. The project includes key infrastructure such as water supply systems, power backup, fire safety measures, elevators, and eco-friendly features like rainwater harvesting and solar lighting.\n\nConstruction is scheduled in three phases over 24 months, beginning with site preparation and foundation work, followed by structural and architectural development. The project emphasizes safety, sustainability, and compliance with all local building regulations."
+    },
+    {
+      "id": "d3c8",
+      "name": "Project B",
+      "location": "Gulshan",
+      "startDate": "2025-07-15",
+      "endDate": "2025-07-30",
+      "budget": 50000,
+      "status": "Under Construction",
+      "projectType": "Residential",
+      "projectManager": "Eiasin Prodhan",
+      "description": "Skyline Heights is a multi-phase residential construction project aimed at developing a modern apartment complex comprising four mid-rise buildings, underground parking, and landscaped recreational areas. The total built-up area spans approximately 200,000 square feet, with 250 residential units ranging from one to three-bedroom apartments. The project includes key infrastructure such as water supply systems, power backup, fire safety measures, elevators, and eco-friendly features like rainwater harvesting and solar lighting. Construction is scheduled in three phases over 24 months, beginning with site preparation and foundation work, followed by structural and architectural development. The project emphasizes safety, sustainability, and compliance with all local building regulations."
     }
   ]
 }
