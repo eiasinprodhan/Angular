@@ -6,11 +6,9 @@
       <h5 class="card-title mb-0 text-md-start text-center">Update Project</h5>
     </div>
     <div class="col-md-auto d-flex justify-content-end align-items-center">
-      <a routerLink="/listprojects">
-        <button type="button" class="btn btn-primary">
+        <button type="button" class="btn btn-primary" onclick="history.back()">
           <i class="fa-solid fa-arrow-left mx-1"></i>Return
         </button>
-      </a>
     </div>
   </div>
 
@@ -45,15 +43,6 @@
 
       <div class="row">
         <div class="col-md-6 mb-3">
-          <label class="form-label fw-bold">Project Manager</label>
-          <input
-            type="text"
-            class="form-control"
-            [(ngModel)]="project.projectManager"
-            name="projectManager"
-          />
-        </div>
-        <div class="col-md-6 mb-3">
           <label class="form-label fw-bold">Start Date</label>
           <input
             type="date"
@@ -62,9 +51,6 @@
             name="startDate"
           />
         </div>
-      </div>
-
-      <div class="row">
         <div class="col-md-6 mb-3">
           <label class="form-label fw-bold">End Date</label>
           <input
@@ -74,6 +60,9 @@
             name="endDate"
           />
         </div>
+      </div>
+
+      <div class="row">
         <div class="col-md-6 mb-3">
           <label class="form-label fw-bold">Budget</label>
           <input
@@ -83,8 +72,7 @@
             name="budget"
           />
         </div>
-      </div>
-      <div class="row">
+
         <div class="col-md-6 mb-3">
           <label class="form-label fw-bold">Status</label>
           <select
@@ -98,6 +86,8 @@
             <option value="Completed">Completed</option>
           </select>
         </div>
+      </div>
+      <div class="row">
         <div class="col-md-6 mb-3">
           <label class="form-label fw-bold">Project Type</label>
           <select
@@ -111,6 +101,16 @@
             <option value="Commercial">Commercial</option>
             <option value="Mixed-use">Mixed Use</option>
           </select>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-bold">Project Manager</label>
+          <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="project.projectManager"
+            name="projectManager"
+          />
         </div>
       </div>
 

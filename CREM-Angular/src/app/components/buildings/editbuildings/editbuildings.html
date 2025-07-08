@@ -1,0 +1,113 @@
+<div class="card">
+  <!-- Header -->
+  <div class="row card-header flex-column flex-md-row border-bottom mx-0 px-3">
+    <div class="col-md-auto me-auto d-md-flex align-items-center">
+      <h5 class="card-title mb-0 text-md-start text-center">Update Building</h5>
+    </div>
+    <div class="col-md-auto d-flex justify-content-end align-items-center">
+      <button type="button" class="btn btn-primary" onclick="history.back()">
+        <i class="fa-solid fa-arrow-left mx-1"></i>Return
+      </button>
+    </div>
+  </div>
+
+  <!-- Body -->
+  <div class="card-body">
+    <form *ngIf="building; else loadingTemplate" (ngSubmit)="updateBuilding()" #buildingForm="ngForm">
+      <div class="row mt-4">
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-bold">Building Name</label>
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            [(ngModel)]="building.name"
+            required
+          />
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-bold">Building Type</label>
+          <select
+            class="form-select"
+            name="type"
+            [(ngModel)]="building.type"
+            required
+          >
+            <option value="" disabled>Select Type</option>
+            <option value="Residential">Residential</option>
+            <option value="Commercial">Commercial</option>
+            <option value="Mixed-use">Mixed Use</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-bold">Project</label>
+          <select
+            class="form-select"
+            name="project"
+            [(ngModel)]="building.project"
+            required
+          >
+            <option value="" disabled>Select Project</option>
+            <option *ngFor="let p of projects" [ngValue]="p">
+              {{ p.name }}
+            </option>
+          </select>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-bold">Company ID</label>
+          <input
+            type="number"
+            class="form-control"
+            name="companyId"
+            [(ngModel)]="building.companyId"
+            required
+            min="1"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-bold">Floor Count</label>
+          <input
+            type="number"
+            class="form-control"
+            name="floorCount"
+            [(ngModel)]="building.floorCount"
+            required
+            min="1"
+          />
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-bold">Unit Count</label>
+          <input
+            type="number"
+            class="form-control"
+            name="unitCount"
+            [(ngModel)]="building.unitCount"
+            required
+            min="1"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <button type="submit" class="btn btn-success">
+            <i class="fa-solid fa-floppy-disk mx-1"></i>Update
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <ng-template #loadingTemplate>
+      <p class="text-muted fst-italic">Loading building data...</p>
+    </ng-template>
+  </div>
+</div>

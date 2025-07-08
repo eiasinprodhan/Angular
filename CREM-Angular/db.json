@@ -1,28 +1,50 @@
 {
   "projects": [
     {
-      "id": "979e",
+      "id": "0b43",
       "name": "Project A",
       "location": "Dhanmondi",
-      "startDate": "2025-07-15",
+      "startDate": "2025-07-01",
       "endDate": "2025-07-30",
-      "budget": 100000,
-      "status": "Completed",
-      "projectType": "Residential",
-      "projectManager": "Eiasin Prodhan",
-      "description": "Skyline Heights is a multi-phase residential construction project aimed at developing a modern apartment complex comprising four mid-rise buildings, underground parking, and landscaped recreational areas. The total built-up area spans approximately 200,000 square feet, with 250 residential units ranging from one to three-bedroom apartments. The project includes key infrastructure such as water supply systems, power backup, fire safety measures, elevators, and eco-friendly features like rainwater harvesting and solar lighting.\n\nConstruction is scheduled in three phases over 24 months, beginning with site preparation and foundation work, followed by structural and architectural development. The project emphasizes safety, sustainability, and compliance with all local building regulations."
-    },
-    {
-      "id": "d3c8",
-      "name": "Project B",
-      "location": "Gulshan",
-      "startDate": "2025-07-15",
-      "endDate": "2025-07-30",
-      "budget": 50000,
+      "budget": 500000,
       "status": "Under Construction",
       "projectType": "Residential",
-      "projectManager": "Eiasin Prodhan",
-      "description": "Skyline Heights is a multi-phase residential construction project aimed at developing a modern apartment complex comprising four mid-rise buildings, underground parking, and landscaped recreational areas. The total built-up area spans approximately 200,000 square feet, with 250 residential units ranging from one to three-bedroom apartments. The project includes key infrastructure such as water supply systems, power backup, fire safety measures, elevators, and eco-friendly features like rainwater harvesting and solar lighting. Construction is scheduled in three phases over 24 months, beginning with site preparation and foundation work, followed by structural and architectural development. The project emphasizes safety, sustainability, and compliance with all local building regulations."
+      "projectManager": "Eiasin Khan",
+      "description": "Project A is a demo initiative focused on developing a user-friendly task management system designed to help individuals and teams organize, prioritize, and track their daily activities. The goal is to streamline task handling and boost productivity through automation, real-time collaboration, and intuitive design."
+    },
+    {
+      "id": "929b",
+      "name": "Project B",
+      "location": "Banani",
+      "startDate": "2025-07-30",
+      "endDate": "2025-07-30",
+      "budget": 10,
+      "status": "Up Coming",
+      "projectType": "Residential",
+      "projectManager": "Eiasin Khan",
+      "description": "10"
+    }
+  ],
+  "buildings": [
+    {
+      "id": "d141",
+      "name": "Building A",
+      "type": "Residential",
+      "project": {
+        "id": "929b",
+        "name": "Project B",
+        "location": "Banani",
+        "startDate": "2025-07-30",
+        "endDate": "2025-07-30",
+        "budget": 10,
+        "status": "Up Coming",
+        "projectType": "Residential",
+        "projectManager": "Eiasin Khan",
+        "description": "10"
+      },
+      "companyId": 500,
+      "floorCount": 500,
+      "unitCount": 500
     }
   ]
 }

@@ -101,7 +101,7 @@
                 <td>
                   <span
                     [ngClass]="getStatusClass(project.status)"
-                    class="badge"
+                    class="badge rounded-pill"
                   >
                     {{ project.status }}
                   </span>
@@ -109,12 +109,18 @@
                 <td>
                   <div class="d-flex gap-2">
                     <!-- View -->
-                    <button class="btn btn-sm btn-outline-info" (click)="viewProjects(project.id)">
+                    <button
+                      class="btn btn-sm btn-outline-info"
+                      (click)="viewProjects(project.id)"
+                    >
                       <i class="fa fa-eye"></i>
                     </button>
 
                     <!-- Edit -->
-                    <button class="btn btn-sm btn-outline-primary" (click)="editProjects(project.id)">
+                    <button
+                      class="btn btn-sm btn-outline-primary"
+                      (click)="editProjects(project.id)"
+                    >
                       <i class="fa fa-edit"></i>
                     </button>
 
