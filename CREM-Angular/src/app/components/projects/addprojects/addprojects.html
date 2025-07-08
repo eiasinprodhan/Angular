@@ -9,7 +9,7 @@
     </div>
     <div class="col-md-auto d-flex justify-content-end align-items-center">
       <a routerLink="/listprojects">
-        <button type="button" class="btn btn-primary"><i class="fa-solid fa-arrow-left mx-1"></i>Return</button>
+        <button type="button" class="btn btn-info"><i class="fa-solid fa-arrow-left mx-1"></i>Return</button>
       </a>
     </div>
   </div>
@@ -71,8 +71,7 @@
           <select id="status" class="form-select" formControlName="status"
             [class.is-invalid]="addProjectForm.get('status')?.touched && addProjectForm.get('status')?.invalid">
             <option value="" disabled selected>Select Status</option>
-            <option value="Planning">Planning</option>
-            <option value="Approved">Approved</option>
+            <option value="Up Coming">Up Coming</option>
             <option value="Under Construction">Under Construction</option>
             <option value="Completed">Completed</option>
           </select>
@@ -118,7 +117,7 @@
         </div>
       </div>
 
-      <button type="submit" class="btn btn-primary">Submit Project</button>
+      <button type="submit" class="btn btn-primary"><i class="fa-solid fa-floppy-disk mx-1"></i>Submit Project</button>
     </form>
   </div>
 </div>

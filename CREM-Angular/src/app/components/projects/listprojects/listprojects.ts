@@ -49,13 +49,11 @@ export class Listprojects implements OnInit {
     })
   }
 
-  // Project Status Design
+   // Project Status Design
   getStatusClass(status: string): string {
     switch (status.toLowerCase()) {
-      case 'planning':
+      case 'up coming':
         return 'bg-primary';
-      case 'approved':
-        return 'bg-info';
       case 'under construction':
         return 'bg-warning';
       case 'completed':

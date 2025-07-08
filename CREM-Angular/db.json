@@ -1,28 +1,16 @@
 {
   "projects": [
     {
-      "id": "9b8a",
+      "id": "979e",
       "name": "Project A",
       "location": "Dhanmondi",
       "startDate": "2025-07-15",
-      "endDate": "2025-07-15",
-      "budget": 10000,
-      "status": "Planning",
+      "endDate": "2025-07-30",
+      "budget": 100000,
+      "status": "Completed",
       "projectType": "Residential",
       "projectManager": "Eiasin Prodhan",
-      "description": "Nothing..."
-    },
-    {
-      "id": "fbc5",
-      "name": "jfghjfghj",
-      "location": "gjfhgjhgf",
-      "startDate": "2025-07-11",
-      "endDate": "2025-07-12",
-      "budget": 10,
-      "status": "Under Construction",
-      "projectType": "Residential",
-      "projectManager": "ghjfghhj",
-      "description": "ghjufghj"
+      "description": "Skyline Heights is a multi-phase residential construction project aimed at developing a modern apartment complex comprising four mid-rise buildings, underground parking, and landscaped recreational areas. The total built-up area spans approximately 200,000 square feet, with 250 residential units ranging from one to three-bedroom apartments. The project includes key infrastructure such as water supply systems, power backup, fire safety measures, elevators, and eco-friendly features like rainwater harvesting and solar lighting.\n\nConstruction is scheduled in three phases over 24 months, beginning with site preparation and foundation work, followed by structural and architectural development. The project emphasizes safety, sustainability, and compliance with all local building regulations."
     }
   ]
 }
