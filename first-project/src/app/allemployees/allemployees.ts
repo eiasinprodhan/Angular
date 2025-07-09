@@ -1,6 +1,7 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { EmployeesService } from '../service/employees.service';
 import { Router } from '@angular/router';
+import { AuthService } from '../service/auth.service';
 
 @Component({
   selector: 'app-allemployees',
@@ -12,12 +13,14 @@ export class Allemployees implements OnInit {
   employees: any;
   constructor(
     private EmployeesService: EmployeesService,
+    private authService: AuthService,
     private router: Router,
     private cdr: ChangeDetectorRef
   ) {}
 
   ngOnInit(): void {
     this.viewAllEmployees();
+    this.getRole();
   }
 
   viewAllEmployees() {
@@ -37,7 +40,17 @@ export class Allemployees implements OnInit {
     });
   }
 
-  updateEmployee(id: string){
+  updateEmployee(id: string) {
     this.router.navigate(['updateemployee', id]);
+  }
+
+  getRole(): boolean {
+    if (this.authService.getUserRole() === 'admin') {
+      return true;
+    } else if (this.authService.getUserRole() === 'hr') {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
