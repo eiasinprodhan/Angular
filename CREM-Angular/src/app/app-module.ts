@@ -16,6 +16,10 @@ import { Addbuildings } from './components/buildings/addbuildings/addbuildings';
 import { Editbuildings } from './components/buildings/editbuildings/editbuildings';
 import { Viewbuildings } from './components/buildings/viewbuildings/viewbuildings';
 import { Listbuildings } from './components/buildings/listbuildings/listbuildings';
+import { Listfloors } from './components/floors/listfloors/listfloors';
+import { Addfloors } from './components/floors/addfloors/addfloors';
+import { Viewfloors } from './components/floors/viewfloors/viewfloors';
+import { Editfloors } from './components/floors/editfloors/editfloors';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { Listbuildings } from './components/buildings/listbuildings/listbuilding
     Addbuildings,
     Editbuildings,
     Viewbuildings,
-    Listbuildings
+    Listbuildings,
+    Listfloors,
+    Addfloors,
+    Viewfloors,
+    Editfloors
   ],
   imports: [
     BrowserModule,

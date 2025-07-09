@@ -1,49 +1,101 @@
 {
   "projects": [
     {
-      "id": "0b43",
+      "id": "f05f",
       "name": "Project A",
-      "location": "Dhanmondi",
-      "startDate": "2025-07-01",
-      "endDate": "2025-07-30",
-      "budget": 500000,
-      "status": "Under Construction",
-      "projectType": "Residential",
-      "projectManager": "Eiasin Khan",
-      "description": "Project A is a demo initiative focused on developing a user-friendly task management system designed to help individuals and teams organize, prioritize, and track their daily activities. The goal is to streamline task handling and boost productivity through automation, real-time collaboration, and intuitive design."
-    },
-    {
-      "id": "929b",
-      "name": "Project B",
-      "location": "Banani",
-      "startDate": "2025-07-30",
-      "endDate": "2025-07-30",
-      "budget": 10,
+      "location": "Dhanmondi, Dhaka, Bangladesh",
+      "startDate": "2025-07-31",
+      "endDate": "2025-12-31",
+      "budget": 1000000,
       "status": "Up Coming",
       "projectType": "Residential",
-      "projectManager": "Eiasin Khan",
-      "description": "10"
+      "projectManager": "Eiasin Prodhan",
+      "description": "The Sunrise Commercial Complex is a proposed multi-purpose construction project aimed at developing a modern, energy-efficient commercial hub in the heart of the city. The project includes the construction of two 8-story office buildings, an underground parking structure, a rooftop green space, and supporting infrastructure such as access roads, landscaping, and utility connections. The construction will be completed in multiple phases over a 24-month period, with an emphasis on sustainable building practices, safety, and timely delivery."
+    },
+    {
+      "id": "3807",
+      "name": "Project B",
+      "location": "Banani, Dhaka, Bangladesh",
+      "startDate": "2025-07-01",
+      "endDate": "2025-10-31",
+      "budget": 500000,
+      "status": "Under Construction",
+      "projectType": "Commercial",
+      "projectManager": "Eiasin Prodhan",
+      "description": "The Sunrise Commercial Complex is a proposed multi-purpose construction project aimed at developing a modern, energy-efficient commercial hub in the heart of the city. The project includes the construction of two 8-story office buildings, an underground parking structure, a rooftop green space, and supporting infrastructure such as access roads, landscaping, and utility connections. The construction will be completed in multiple phases over a 24-month period, with an emphasis on sustainable building practices, safety, and timely delivery."
+    },
+    {
+      "id": "ca7e",
+      "name": "Project C",
+      "location": "Gulistan, Dhaka, Bangladesh",
+      "startDate": "2025-01-01",
+      "endDate": "2025-06-30",
+      "budget": 500000,
+      "status": "Completed",
+      "projectType": "Mixed-use",
+      "projectManager": "Eiasin Prodhan",
+      "description": "The Sunrise Commercial Complex is a proposed multi-purpose construction project aimed at developing a modern, energy-efficient commercial hub in the heart of the city. The project includes the construction of two 8-story office buildings, an underground parking structure, a rooftop green space, and supporting infrastructure such as access roads, landscaping, and utility connections. The construction will be completed in multiple phases over a 24-month period, with an emphasis on sustainable building practices, safety, and timely delivery."
     }
   ],
   "buildings": [
     {
-      "id": "d141",
+      "id": "8b8b",
       "name": "Building A",
       "type": "Residential",
       "project": {
-        "id": "929b",
-        "name": "Project B",
-        "location": "Banani",
-        "startDate": "2025-07-30",
-        "endDate": "2025-07-30",
-        "budget": 10,
+        "id": "f05f",
+        "name": "Project A",
+        "location": "Dhanmondi, Dhaka, Bangladesh",
+        "startDate": "2025-07-31",
+        "endDate": "2025-12-31",
+        "budget": 1000000,
         "status": "Up Coming",
         "projectType": "Residential",
-        "projectManager": "Eiasin Khan",
-        "description": "10"
+        "projectManager": "Eiasin Prodhan",
+        "description": "The Sunrise Commercial Complex is a proposed multi-purpose construction project aimed at developing a modern, energy-efficient commercial hub in the heart of the city. The project includes the construction of two 8-story office buildings, an underground parking structure, a rooftop green space, and supporting infrastructure such as access roads, landscaping, and utility connections. The construction will be completed in multiple phases over a 24-month period, with an emphasis on sustainable building practices, safety, and timely delivery."
       },
-      "companyId": 500,
-      "floorCount": 500,
+      "companyId": 1258684785,
+      "floorCount": 10,
+      "unitCount": 30
+    },
+    {
+      "id": "3134",
+      "name": "Building B",
+      "type": "Commercial",
+      "project": {
+        "id": "f05f",
+        "name": "Project A",
+        "location": "Dhanmondi, Dhaka, Bangladesh",
+        "startDate": "2025-07-31",
+        "endDate": "2025-12-31",
+        "budget": 1000000,
+        "status": "Up Coming",
+        "projectType": "Residential",
+        "projectManager": "Eiasin Prodhan",
+        "description": "The Sunrise Commercial Complex is a proposed multi-purpose construction project aimed at developing a modern, energy-efficient commercial hub in the heart of the city. The project includes the construction of two 8-story office buildings, an underground parking structure, a rooftop green space, and supporting infrastructure such as access roads, landscaping, and utility connections. The construction will be completed in multiple phases over a 24-month period, with an emphasis on sustainable building practices, safety, and timely delivery."
+      },
+      "companyId": 1648598754,
+      "floorCount": 5,
+      "unitCount": 10
+    },
+    {
+      "id": "27d0",
+      "name": "Building C",
+      "type": "Mixed-use",
+      "project": {
+        "id": "3807",
+        "name": "Project B",
+        "location": "Banani, Dhaka, Bangladesh",
+        "startDate": "2025-07-01",
+        "endDate": "2025-10-31",
+        "budget": 500000,
+        "status": "Under Construction",
+        "projectType": "Commercial",
+        "projectManager": "Eiasin Prodhan",
+        "description": "The Sunrise Commercial Complex is a proposed multi-purpose construction project aimed at developing a modern, energy-efficient commercial hub in the heart of the city. The project includes the construction of two 8-story office buildings, an underground parking structure, a rooftop green space, and supporting infrastructure such as access roads, landscaping, and utility connections. The construction will be completed in multiple phases over a 24-month period, with an emphasis on sustainable building practices, safety, and timely delivery."
+      },
+      "companyId": 9865214785,
+      "floorCount": 100,
       "unitCount": 500
     }
   ]

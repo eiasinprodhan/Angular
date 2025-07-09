@@ -48,7 +48,8 @@
           <select
             class="form-select"
             name="project"
-            [(ngModel)]="building.project"
+             [(ngModel)]="building.project"
+            [compareWith]="compareProject"
             required
           >
             <option value="" disabled>Select Project</option>
