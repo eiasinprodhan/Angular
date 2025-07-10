@@ -1,25 +1,28 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { ProjectService } from '../../../services/project.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
 import { Project } from '../../../models/project.model';
+import { EmployeeService } from '../../../services/employee.service';
+import { Employee } from '../../../models/employee.model';
 
 @Component({
   selector: 'app-addprojects',
   standalone: false,
   templateUrl: './addprojects.html',
-  styleUrl: './addprojects.css'
+  styleUrl: './addprojects.css',
 })
 export class Addprojects implements OnInit {
-
   addProjectForm!: FormGroup;
   message: string = '';
   messageType: 'success' | 'danger' = 'success';
 
+  employees!: any;
+
   constructor(
     private projectService: ProjectService,
+    private employeeService: EmployeeService,
     private formBuilder: FormBuilder
-  ) { }
+  ) {}
 
   ngOnInit(): void {
     this.addProjectForm = this.formBuilder.group({
@@ -31,8 +34,10 @@ export class Addprojects implements OnInit {
       status: ['', Validators.required],
       projectType: ['', Validators.required],
       projectManager: ['', Validators.required],
-      description: ['', Validators.required]
+      description: ['', Validators.required],
     });
+
+    this.viewRole();
   }
 
   addProjects(): void {
@@ -55,15 +60,18 @@ export class Addprojects implements OnInit {
         console.error(err);
         this.message = 'Failed to add project. Please try again.';
         this.messageType = 'danger';
-      }
+      },
     });
   }
 
   private markAllFieldsAsTouched() {
-    Object.keys(this.addProjectForm.controls).forEach(field => {
+    Object.keys(this.addProjectForm.controls).forEach((field) => {
       const control = this.addProjectForm.get(field);
       control?.markAsTouched({ onlySelf: true });
     });
   }
 
+  viewRole(): void {
+    this.employees = this.employeeService.viewProjectManager();
+  }
 }

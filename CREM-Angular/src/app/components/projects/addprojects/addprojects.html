@@ -98,10 +98,22 @@
 
         <div class="col-md-6 mb-3">
           <label for="projectManager" class="form-label fw-bold">Project Manager</label>
-          <input type="text" id="projectManager" class="form-control" formControlName="projectManager"
-            [class.is-invalid]="addProjectForm.get('projectManager')?.touched && addProjectForm.get('projectManager')?.invalid" />
-          <div *ngIf="addProjectForm.get('projectManager')?.touched && addProjectForm.get('projectManager')?.invalid" class="invalid-feedback">
-            Project manager is required.
+          <select
+            id="projectManager"
+            class="form-select"
+            formControlName="projectManager"
+            [class.is-invalid]="addProjectForm.get('projectManager')?.touched && addProjectForm.get('projectManager')?.invalid"
+          >
+            <option value="" disabled selected>Select Project Manager</option>
+            <option *ngFor="let e of employees|async" [ngValue]="e.name">
+              {{ e.name }}
+            </option>
+          </select>
+          <div
+            *ngIf="addProjectForm.get('projectManager')?.touched && addProjectForm.get('projectManager')?.invalid"
+            class="invalid-feedback"
+          >
+            Project Manager selection is required.
           </div>
         </div>
       </div>

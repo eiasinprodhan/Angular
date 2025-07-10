@@ -2,5 +2,32 @@
   "projects": [],
   "buildings": [],
   "floors": [],
-  "employees": []
+  "employees": [
+    {
+      "id": "3d8f",
+      "name": "Parvej Hossain",
+      "email": "parvejhossain@gmail.com",
+      "phone": "01906600275",
+      "nid": 1069854875,
+      "joiningDate": "2025-07-01",
+      "role": "Project Manager",
+      "salarytype": "Monthly",
+      "salary": 50000,
+      "status": false,
+      "buildingId": ""
+    },
+    {
+      "id": "a4c2",
+      "name": "Eiasin Prodhan",
+      "email": "eiasinprodhan@gmail.com",
+      "phone": "01888118271",
+      "nid": 9658652458,
+      "joiningDate": "2025-07-01",
+      "role": "Project Manager",
+      "salarytype": "Monthly",
+      "salary": 100000,
+      "status": false,
+      "buildingId": ""
+    }
+  ]
 }

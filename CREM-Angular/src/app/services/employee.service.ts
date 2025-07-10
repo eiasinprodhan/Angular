@@ -4,15 +4,12 @@ import { Employee } from '../models/employee.model';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class EmployeeService {
+  baseUrl: string = 'http://localhost:3000/employees';
 
-  baseUrl: string = "http://localhost:3000/employees";
-
-  constructor(
-    private http: HttpClient
-  ) { }
+  constructor(private http: HttpClient) {}
 
   // Create new employee
   addEmployee(employee: Employee): Observable<any> {
@@ -37,5 +34,15 @@ export class EmployeeService {
   // Delete employee
   deleteEmployee(id: string): Observable<any> {
     return this.http.delete(`${this.baseUrl}/${id}`);
+  }
+
+  // Search employee by role
+  viewProjectManager(): Observable<any> {
+    return this.http.get(`${this.baseUrl}?role=Project Manager`);
+  }
+
+  //Update employee status
+  editEmployeeStatus(id: string, status: boolean): Observable<any> {
+    return this.http.put(`${this.baseUrl}/${id}`, status);
   }
 }
