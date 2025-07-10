@@ -1,0 +1,191 @@
+<!-- Success/Error Message -->
+<div *ngIf="message" class="alert" [ngClass]="'alert-' + messageType">
+  {{ message }}
+</div>
+
+<!-- Card Container -->
+<div class="card">
+  <!-- Header -->
+  <div class="row card-header flex-column flex-md-row border-bottom mx-0 px-3">
+    <div class="col-md-auto me-auto d-md-flex align-items-center">
+      <h5 class="card-title mb-0 text-md-start text-center">
+        Add New Employee
+      </h5>
+    </div>
+    <div class="col-md-auto d-flex justify-content-end align-items-center">
+      <a routerLink="/listemployees">
+        <button type="button" class="btn btn-primary">
+          <i class="fa-solid fa-arrow-left mx-1"></i>Return
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Form Body -->
+  <div class="card-body">
+    <form
+      [formGroup]="addEmployeeForm"
+      (ngSubmit)="addEmployee()"
+      method="post"
+    >
+      <div class="row mt-4">
+        <div class="col-md-6 mb-3">
+          <label for="name" class="  form-label fw-bold">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            formControlName="name"
+            [class.is-invalid]="addEmployeeForm.get('name')?.touched && addEmployeeForm.get('name')?.invalid"
+          />
+          <div
+            class="invalid-feedback"
+            *ngIf="addEmployeeForm.get('name')?.touched && addEmployeeForm.get('name')?.invalid"
+          >
+            Name is required.
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="email" class="  form-label fw-bold"
+            >Email <span class="text-secondary">(Optional)</span></label
+          >
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            formControlName="email"
+            [class.is-invalid]="addEmployeeForm.get('email')?.touched && addEmployeeForm.get('email')?.invalid"
+          />
+          <div
+            class="invalid-feedback"
+            *ngIf="addEmployeeForm.get('email')?.touched && addEmployeeForm.get('phone')?.invalid"
+          >
+            Email is invalid.
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="phone" class="  form-label fw-bold">Phone</label>
+          <input
+            type="text"
+            id="phone"
+            class="form-control"
+            formControlName="phone"
+            [class.is-invalid]="addEmployeeForm.get('phone')?.touched && addEmployeeForm.get('phone')?.invalid"
+          />
+          <div
+            class="invalid-feedback"
+            *ngIf="addEmployeeForm.get('phone')?.touched && addEmployeeForm.get('phone')?.invalid"
+          >
+            Phone number is required.
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="nid" class="  form-label fw-bold">NID</label>
+          <input
+            type="number"
+            id="nid"
+            class="form-control"
+            formControlName="nid"
+            [class.is-invalid]="addEmployeeForm.get('nid')?.touched && addEmployeeForm.get('nid')?.invalid"
+          />
+          <div
+            class="invalid-feedback"
+            *ngIf="addEmployeeForm.get('nid')?.touched && addEmployeeForm.get('nid')?.invalid"
+          >
+            National ID is required.
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="joiningDate" class="  form-label fw-bold">Joining Date</label>
+          <input
+            type="date"
+            id="joiningDate"
+            class="form-control"
+            formControlName="joiningDate"
+            [class.is-invalid]="addEmployeeForm.get('joiningDate')?.touched && addEmployeeForm.get('joiningDate')?.invalid"
+          />
+          <div
+            class="invalid-feedback"
+            *ngIf="addEmployeeForm.get('joiningDate')?.touched && addEmployeeForm.get('joiningDate')?.invalid"
+          >
+            Joining date is required.
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="role" class="  form-label fw-bold">Role</label>
+          <select
+            id="role"
+            class="form-select"
+            formControlName="role"
+            [class.is-invalid]="addEmployeeForm.get('role')?.touched && addEmployeeForm.get('role')?.invalid"
+          >
+            <option value="" disabled selected>Select Role</option>
+            <option value="Admin">Admin</option>
+            <option value="Project Manager">Project Manager</option>
+            <option value="Site Manager">Site Manager</option>
+            <option value="Labour">Labour</option>
+          </select>
+          <div
+            class="invalid-feedback"
+            *ngIf="addEmployeeForm.get('role')?.touched && addEmployeeForm.get('role')?.invalid"
+          >
+            Role is required.
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="salarytype" class="  form-label fw-bold">Salary Type</label>
+          <select
+            id="salarytype"
+            class="form-select"
+            formControlName="salarytype"
+            [class.is-invalid]="addEmployeeForm.get('salarytype')?.touched && addEmployeeForm.get('salarytype')?.invalid"
+          >
+            <option value="" disabled>Select Type</option>
+            <option value="Daily">Daily</option>
+            <option value="Monthly">Monthly</option>
+            <option value="Contract">Contract</option>
+          </select>
+          <div
+            class="invalid-feedback"
+            *ngIf="addEmployeeForm.get('salarytype')?.touched && addEmployeeForm.get('salarytype')?.invalid"
+          >
+            Salary type is required.
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="salary" class="  form-label fw-bold">Salary</label>
+          <input
+            type="number"
+            id="salary"
+            class="form-control"
+            formControlName="salary"
+            [class.is-invalid]="addEmployeeForm.get('salary')?.touched && addEmployeeForm.get('salary')?.invalid"
+          />
+          <div
+            class="invalid-feedback"
+            *ngIf="addEmployeeForm.get('dailySalary')?.touched && addEmployeeForm.get('dailySalary')?.invalid"
+          >
+            Daily salary must be greater than 0.
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">
+        <i class="fa-solid fa-floppy-disk mx-1"></i>Submit Employee
+      </button>
+    </form>
+  </div>
+</div>

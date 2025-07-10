@@ -5,12 +5,12 @@
       <!-- Header -->
       <div class="row card-header flex-column flex-md-row border-bottom mx-0 px-3">
         <div class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto mt-0">
-          <h5 class="card-title mb-0 text-md-start text-center pb-md-0 pb-6">Floors</h5>
+          <h5 class="card-title mb-0 text-md-start text-center pb-md-0 pb-6">Employees</h5>
         </div>
         <div class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto mt-0">
-          <a routerLink="/addfloors">
+          <a routerLink="/addemployees">
             <button class="btn btn-primary" type="button">
-              <i class="fa-solid fa-plus mx-1"></i>Add New Floors
+              <i class="fa-solid fa-plus mx-1"></i>Add New Employee
             </button>
           </a>
         </div>
@@ -47,24 +47,33 @@
             <thead>
               <tr>
                 <th>ID</th>
-                <th>Floor Name</th>
-                <th>Building Name</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Role</th>
+                <th>Status</th>
                 <th>Action</th>
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let floor of floors|async">
-                <td>{{ floor.id }}</td>
-                <td>{{ floor.name }}</td>
+              <tr *ngFor="let employee of employees | async">
+                <td>{{ employee.id }}</td>
+                <td>{{ employee.name }}</td>
+                <td>{{ employee.phone }}</td>
+                <td>{{ employee.role }}</td>
+                <td>
+                  <span class="badge rounded-pill" [ngClass]="employee.status ? 'bg-success' : 'bg-danger'">
+                    {{ employee.status ? 'Active' : 'Inactive' }}
+                  </span>
+                </td>
                 <td>
                   <div class="d-flex gap-2">
-                    <button class="btn btn-sm btn-outline-info" (click)="viewFloors(floor.id)">
+                    <button class="btn btn-sm btn-outline-info" (click)="viewEmployee(employee.id)">
                       <i class="fa fa-eye"></i>
                     </button>
-                    <button class="btn btn-sm btn-outline-primary" (click)="editFloors(floor.id)">
+                    <button class="btn btn-sm btn-outline-primary" (click)="editEmployee(employee.id)">
                       <i class="fa fa-edit"></i>
                     </button>
-                    <button class="btn btn-sm btn-outline-danger" (click)="deleteFloors(floor.id)">
+                    <button class="btn btn-sm btn-outline-danger" (click)="deleteEmployee(employee.id)">
                       <i class="fa fa-trash"></i>
                     </button>
                   </div>

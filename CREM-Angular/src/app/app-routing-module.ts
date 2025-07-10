@@ -13,10 +13,23 @@ import { Editfloors } from './components/floors/editfloors/editfloors';
 import { Viewfloors } from './components/floors/viewfloors/viewfloors';
 import { Listfloors } from './components/floors/listfloors/listfloors';
 import { Addfloors } from './components/floors/addfloors/addfloors';
+import { Home } from './components/pages/home/home';
+import { Products } from './components/pages/products/products';
+import { Productdetails } from './components/pages/productdetails/productdetails';
+import { Signin } from './components/pages/signin/signin';
+import { Signup } from './components/pages/signup/signup';
+import { Editemployees } from './components/employees/editemployees/editemployees';
+import { Viewemployees } from './components/employees/viewemployees/viewemployees';
+import { Listemployees } from './components/employees/listemployees/listemployees';
+import { Addemployees } from './components/employees/addemployees/addemployees';
 
 const routes: Routes = [
-  { path: '', component: Dashboard },
+  { path: '', component: Home },
   { path: 'dashboard', component: Dashboard },
+  { path: 'products', component: Products },
+  { path: 'productdetails', component: Productdetails },
+  { path: 'signin', component: Signin },
+  { path: 'signup', component: Signup },
   { path: 'addprojects', component: Addprojects },
   { path: 'listprojects', component: Listprojects },
   { path: 'viewprojects/:id', component: Viewprojects },
@@ -28,7 +41,12 @@ const routes: Routes = [
   { path: 'addfloors', component: Addfloors },
   { path: 'listfloors', component: Listfloors },
   { path: 'viewfloors/:id', component: Viewfloors },
-  { path: 'editfloors/:id', component: Editfloors }
+  { path: 'editfloors/:id', component: Editfloors },
+  { path: 'editbuildings/:id', component: Editbuildings },
+  { path: 'addemployees', component: Addemployees },
+  { path: 'listemployees', component: Listemployees },
+  { path: 'viewemployees/:id', component: Viewemployees },
+  { path: 'editemployees/:id', component: Editemployees }
 ];
 
 @NgModule({

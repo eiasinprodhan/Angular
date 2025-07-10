@@ -20,6 +20,15 @@ import { Listfloors } from './components/floors/listfloors/listfloors';
 import { Addfloors } from './components/floors/addfloors/addfloors';
 import { Viewfloors } from './components/floors/viewfloors/viewfloors';
 import { Editfloors } from './components/floors/editfloors/editfloors';
+import { Addemployees } from './components/employees/addemployees/addemployees';
+import { Listemployees } from './components/employees/listemployees/listemployees';
+import { Viewemployees } from './components/employees/viewemployees/viewemployees';
+import { Editemployees } from './components/employees/editemployees/editemployees';
+import { Home } from './components/pages/home/home';
+import { Signup } from './components/pages/signup/signup';
+import { Signin } from './components/pages/signin/signin';
+import { Products } from './components/pages/products/products';
+import { Productdetails } from './components/pages/productdetails/productdetails';
 
 @NgModule({
   declarations: [
@@ -38,7 +47,16 @@ import { Editfloors } from './components/floors/editfloors/editfloors';
     Listfloors,
     Addfloors,
     Viewfloors,
-    Editfloors
+    Editfloors,
+    Addemployees,
+    Listemployees,
+    Viewemployees,
+    Editemployees,
+    Home,
+    Signup,
+    Signin,
+    Products,
+    Productdetails
   ],
   imports: [
     BrowserModule,
