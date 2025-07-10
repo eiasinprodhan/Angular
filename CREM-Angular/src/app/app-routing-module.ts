@@ -22,27 +22,47 @@ import { Editemployees } from './components/employees/editemployees/editemployee
 import { Viewemployees } from './components/employees/viewemployees/viewemployees';
 import { Listemployees } from './components/employees/listemployees/listemployees';
 import { Addemployees } from './components/employees/addemployees/addemployees';
+import { Addrawmaterials } from './components/rawmaterials/addrawmaterials/addrawmaterials';
+import { Listrawmaterials } from './components/rawmaterials/listrawmaterials/listrawmaterials';
+import { Viewrawmaterials } from './components/rawmaterials/viewrawmaterials/viewrawmaterials';
+import { Editrawmaterials } from './components/rawmaterials/editrawmaterials/editrawmaterials';
 
 const routes: Routes = [
-  { path: '', component: Home },
+  // Others
   { path: 'dashboard', component: Dashboard },
+
+  // Pages
+  { path: '', component: Home },
   { path: 'products', component: Products },
   { path: 'productdetails', component: Productdetails },
   { path: 'signin', component: Signin },
   { path: 'signup', component: Signup },
+
+  // Projects
   { path: 'addprojects', component: Addprojects },
   { path: 'listprojects', component: Listprojects },
   { path: 'viewprojects/:id', component: Viewprojects },
   { path: 'editprojects/:id', component: Editprojects },
+
+  // Buildings
   { path: 'addbuildings', component: Addbuildings },
   { path: 'listbuildings', component: Listbuildings },
   { path: 'viewbuildings/:id', component: Viewbuildings },
   { path: 'editbuildings/:id', component: Editbuildings },
+
+  // Floors
   { path: 'addfloors', component: Addfloors },
   { path: 'listfloors', component: Listfloors },
   { path: 'viewfloors/:id', component: Viewfloors },
   { path: 'editfloors/:id', component: Editfloors },
-  { path: 'editbuildings/:id', component: Editbuildings },
+
+  // Raw Materials
+  { path: 'addrawmaterials', component: Addrawmaterials },
+  { path: 'listrawmaterials', component: Listrawmaterials },
+  { path: 'viewrawmaterials/:id', component: Viewrawmaterials },
+  { path: 'editrawmaterials/:id', component: Editrawmaterials },
+
+  // Employees
   { path: 'addemployees', component: Addemployees },
   { path: 'listemployees', component: Listemployees },
   { path: 'viewemployees/:id', component: Viewemployees },

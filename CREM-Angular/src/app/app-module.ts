@@ -29,6 +29,10 @@ import { Signup } from './components/pages/signup/signup';
 import { Signin } from './components/pages/signin/signin';
 import { Products } from './components/pages/products/products';
 import { Productdetails } from './components/pages/productdetails/productdetails';
+import { Addrawmaterials } from './components/rawmaterials/addrawmaterials/addrawmaterials';
+import { Listrawmaterials } from './components/rawmaterials/listrawmaterials/listrawmaterials';
+import { Viewrawmaterials } from './components/rawmaterials/viewrawmaterials/viewrawmaterials';
+import { Editrawmaterials } from './components/rawmaterials/editrawmaterials/editrawmaterials';
 
 @NgModule({
   declarations: [
@@ -56,7 +60,11 @@ import { Productdetails } from './components/pages/productdetails/productdetails
     Signup,
     Signin,
     Products,
-    Productdetails
+    Productdetails,
+    Addrawmaterials,
+    Listrawmaterials,
+    Viewrawmaterials,
+    Editrawmaterials
   ],
   imports: [
     BrowserModule,
