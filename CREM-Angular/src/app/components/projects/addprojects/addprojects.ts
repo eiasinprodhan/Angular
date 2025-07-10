@@ -3,7 +3,6 @@ import { ProjectService } from '../../../services/project.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Project } from '../../../models/project.model';
 import { EmployeeService } from '../../../services/employee.service';
-import { Employee } from '../../../models/employee.model';
 
 @Component({
   selector: 'app-addprojects',
