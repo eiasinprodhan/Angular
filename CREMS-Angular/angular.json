@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "CREM-Angular": {
+    "CREMS-Angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -71,10 +71,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "CREM-Angular:build:production"
+              "buildTarget": "CREMS-Angular:build:production"
             },
             "development": {
-              "buildTarget": "CREM-Angular:build:development"
+              "buildTarget": "CREMS-Angular:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -22,6 +22,15 @@
       "siteManager": "b8ff",
       "floorCount": 0,
       "unitCount": 0
+    },
+    {
+      "id": "83a8",
+      "name": "Building B",
+      "type": "Commercial",
+      "project": "87e9",
+      "siteManager": "b8ff",
+      "floorCount": 0,
+      "unitCount": 0
     }
   ],
   "floors": [],
