@@ -10,4 +10,7 @@ export class Employee {
     salary!: number;
     status!: boolean;
     buildingId!: string;
+    photo!:string;
+    country!:string;
+    address!:string;
 }

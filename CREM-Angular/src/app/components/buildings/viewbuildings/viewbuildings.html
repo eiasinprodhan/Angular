@@ -8,9 +8,9 @@
       </h5>
     </div>
     <div class="col-md-auto d-flex justify-content-end align-items-center">
-        <button type="button" class="btn btn-primary" onclick="history.back()">
-          <i class="fa-solid fa-arrow-left mx-1"></i>Return
-        </button>
+      <button type="button" class="btn btn-primary" onclick="history.back()">
+        <i class="fa-solid fa-arrow-left mx-1"></i>Return
+      </button>
     </div>
   </div>
 
@@ -34,8 +34,10 @@
           <div class="text-muted">{{ building.type }}</div>
         </div>
         <div class="col-md-6 mb-3">
-          <label class="form-label fw-bold">Company ID</label>
-          <div class="text-muted">{{ building.companyId }}</div>
+          <label class="form-label fw-bold">Site Manager</label>
+          <div class="text-muted">
+            <a class="text-success" routerLink="/viewemployees/{{siteManager.id}}">{{ siteManager.name }}</a>
+          </div>
         </div>
       </div>
 
@@ -53,10 +55,8 @@
       <div class="row">
         <div class="col-md-6 mb-3">
           <label class="form-label fw-bold">Project</label>
-          <a routerLink="/viewprojects/{{building.project.id}}"
-            ><div class="text-success">
-              {{ building.project.name || null }}
-            </div></a
+          <a routerLink="/viewprojects/{{building.project}}"
+            ><div class="text-success">{{ project.name }}</div></a
           >
         </div>
       </div>

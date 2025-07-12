@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Project } from '../../../models/project.model';
 import { BuildingService } from '../../../services/building.service';
 import { ProjectService } from '../../../services/project.service';
+import { EmployeeService } from '../../../services/employee.service';
 
 
 @Component({
@@ -13,7 +14,8 @@ import { ProjectService } from '../../../services/project.service';
 })
 export class Addbuildings implements OnInit {
   addBuildingForm!: FormGroup;
-  projects: Project[] = [];
+  projects!: any;
+  siteManagers!:any;
 
   message: string = '';
   messageType: string = '';
@@ -21,6 +23,7 @@ export class Addbuildings implements OnInit {
   constructor(
     private buildingService: BuildingService,
     private projectService: ProjectService,
+    private employeeService: EmployeeService,
     private formBuilder: FormBuilder,
     private cdr: ChangeDetectorRef
   ) { }
@@ -29,34 +32,15 @@ export class Addbuildings implements OnInit {
     this.addBuildingForm = this.formBuilder.group({
       name: ['', Validators.required],
       type: ['', Validators.required],
-      project: this.formBuilder.group(
-        {
-          id: [''],
-          name: [''],
-          location: [''],
-          startDate: [''],
-          endDate: [''],
-          budget: [0],
-          status: [''],
-          projectType: [''],
-          projectManager: [''],
-          description: ['']
-        }
-      ),
-      companyId: [null, [Validators.required, Validators.min(1)]],
-      floorCount: [null, [Validators.required, Validators.min(1)]],
-      unitCount: [null, [Validators.required, Validators.min(1)]]
+      project: ['', Validators.required],
+      siteManager: ['', [Validators.required, Validators.min(1)]],
+      floorCount: [0],
+      unitCount: [0]
     });
 
     this.listProjects();
+    this.viewSiteManager();
 
-    this.addBuildingForm.get('project')?.get('id')?.valueChanges.subscribe(id => {
-      const selectedProject = this.projects.find(p => p.id === id);
-      if (selectedProject) {
-        this.addBuildingForm.patchValue({ project: selectedProject })
-      }
-    }
-    )
   }
 
   addBuildings(): void {
@@ -80,18 +64,10 @@ export class Addbuildings implements OnInit {
   }
 
   listProjects(): void {
-    this.projectService.listProjects().subscribe({
-      next: (res) => {
-        this.projects = res;
-        console.log(res);
-        this.cdr.reattach();
-      },
-      error: (err) => {
-        console.error(err);
-      }
-    });
+    this.projects = this.projectService.listProjects();
   }
 
-
-
+  viewSiteManager(): void {
+    this.siteManagers = this.employeeService.viewEmployeeByRole("Site Manager");
+  }
 }

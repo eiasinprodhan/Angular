@@ -32,5 +32,9 @@ export class BuildingService {
   deleteBuildings(id: string): Observable<any> {
     return this.http.delete(this.baseUrl + '/' + id);
   }
+
+  listBuildingByproject(prodectId: string): Observable<any>{
+    return this.http.get(this.baseUrl+"?project="+prodectId);
+  }
 }
 

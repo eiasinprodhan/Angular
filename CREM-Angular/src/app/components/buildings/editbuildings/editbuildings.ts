@@ -4,6 +4,7 @@ import { ProjectService } from '../../../services/project.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Project } from '../../../models/project.model';
 import { Building } from '../../../models/building.model';
+import { EmployeeService } from '../../../services/employee.service';
 
 @Component({
   selector: 'app-editbuildings',
@@ -14,6 +15,7 @@ import { Building } from '../../../models/building.model';
 export class Editbuildings implements OnInit {
   id!: string;
   building: Building = new Building();
+  siteManagers!:any;
 
   projects: Project[] = [];
   message: string = '';
@@ -23,6 +25,7 @@ export class Editbuildings implements OnInit {
     private ar: ActivatedRoute,
     private buildingService: BuildingService,
     private projectService: ProjectService,
+    private employeeService: EmployeeService,
     private router: Router,
     private cdr: ChangeDetectorRef
   ) { }
@@ -31,6 +34,7 @@ export class Editbuildings implements OnInit {
     this.id = this.ar.snapshot.params['id'];
     this.loadBuilding();
     this.loadProjects();
+    this.viewSiteManager();
   }
 
   loadBuilding(): void {
@@ -70,7 +74,8 @@ export class Editbuildings implements OnInit {
     });
   }
 
-  compareProject(p1: Project, p2: Project): boolean {
-    return p1 && p2 ? p1.id === p2.id : p1 === p2;
+  viewSiteManager(): void {
+    this.siteManagers = this.employeeService.viewEmployeeByRole("Site Manager");
   }
+
 }

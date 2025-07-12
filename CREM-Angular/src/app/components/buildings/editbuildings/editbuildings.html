@@ -13,7 +13,11 @@
 
   <!-- Body -->
   <div class="card-body">
-    <form *ngIf="building; else loadingTemplate" (ngSubmit)="updateBuilding()" #buildingForm="ngForm">
+    <form
+      *ngIf="building; else loadingTemplate"
+      (ngSubmit)="updateBuilding()"
+      #buildingForm="ngForm"
+    >
       <div class="row mt-4">
         <div class="col-md-6 mb-3">
           <label class="form-label fw-bold">Building Name</label>
@@ -48,59 +52,37 @@
           <select
             class="form-select"
             name="project"
-             [(ngModel)]="building.project"
-            [compareWith]="compareProject"
+            [(ngModel)]="building.project"
             required
           >
             <option value="" disabled>Select Project</option>
-            <option *ngFor="let p of projects" [ngValue]="p">
+            <option *ngFor="let p of projects" [ngValue]="p.id">
               {{ p.name }}
             </option>
           </select>
         </div>
 
         <div class="col-md-6 mb-3">
-          <label class="form-label fw-bold">Company ID</label>
-          <input
-            type="number"
-            class="form-control"
-            name="companyId"
-            [(ngModel)]="building.companyId"
-            required
-            min="1"
-          />
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <label class="form-label fw-bold">Floor Count</label>
-          <input
-            type="number"
-            class="form-control"
-            name="floorCount"
-            [(ngModel)]="building.floorCount"
-            required
-            min="1"
-          />
-        </div>
-
-        <div class="col-md-6 mb-3">
-          <label class="form-label fw-bold">Unit Count</label>
-          <input
-            type="number"
-            class="form-control"
-            name="unitCount"
-            [(ngModel)]="building.unitCount"
-            required
-            min="1"
-          />
+          <label for="projectManager" class="form-label fw-bold"
+            >Site Manager</label
+          >
+          <select
+            id="siteManager"
+            class="form-select"
+            [(ngModel)]="building.siteManager"
+            name="siteManager"
+          >
+            <option [ngValue]="null" disabled>Select Project Manager</option>
+            <option *ngFor="let e of siteManagers | async" [ngValue]="e.id">
+              {{ e.name }}
+            </option>
+          </select>
         </div>
       </div>
 
       <div class="row">
         <div class="col-12">
-          <button type="submit" class="btn btn-success">
+          <button type="submit" class="btn btn-primary">
             <i class="fa-solid fa-floppy-disk mx-1"></i>Update
           </button>
         </div>

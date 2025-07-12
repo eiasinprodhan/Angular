@@ -33,7 +33,9 @@
         </div>
         <div class="col-md-6 mb-3">
           <label class="form-label fw-bold">Project Manager</label>
-          <div class="text-muted">{{ project.projectManager }}</div>
+          <a routerLink="/viewemployees/{{employee.id}}"
+            ><div class="text-success">{{ employee.name }}</div></a
+          >
         </div>
       </div>
 
@@ -74,6 +76,18 @@
         <div class="col-md-6 mb-3">
           <label class="form-label fw-bold">Project Type</label>
           <div class="text-muted">{{ project.projectType }}</div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-bold">Total Buildings</label>
+          <ng-container *ngIf="buildings | async as building">
+            <ng-container *ngIf="building.length > 0; else noBuilding">
+              <p>{{ building.length | number:'2.0' }}</p>
+            </ng-container>
+          </ng-container>
+
+          <ng-template #noBuilding>
+            <div class="text-muted">No buildings available.</div>
+          </ng-template>
         </div>
       </div>
 

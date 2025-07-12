@@ -15,7 +15,7 @@ export class Addprojects implements OnInit {
   message: string = '';
   messageType: 'success' | 'danger' = 'success';
 
-  employees!: any;
+  projectManagers!: any;
 
   constructor(
     private projectService: ProjectService,
@@ -36,7 +36,7 @@ export class Addprojects implements OnInit {
       description: ['', Validators.required],
     });
 
-    this.viewRole();
+    this.viewProjectManager();
   }
 
   addProjects(): void {
@@ -70,7 +70,7 @@ export class Addprojects implements OnInit {
     });
   }
 
-  viewRole(): void {
-    this.employees = this.employeeService.viewProjectManager();
+  viewProjectManager(): void {
+    this.projectManagers = this.employeeService.viewEmployeeByRole("Project Manager");
   }
 }

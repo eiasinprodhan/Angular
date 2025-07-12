@@ -74,7 +74,7 @@
             [class.is-invalid]="addBuildingForm.get('project')?.touched && addBuildingForm.get('project')?.invalid"
           >
             <option value="" disabled selected>Select Type</option>
-            <option *ngFor="let p of projects" [ngValue]="p">
+            <option *ngFor="let p of projects|async" [ngValue]="p.id">
               {{ p.name }}
             </option>
           </select>
@@ -87,55 +87,23 @@
         </div>
 
         <div class="col-md-6 mb-3">
-          <label for="companyId" class="form-label fw-bold">Company ID</label>
-          <input
-            type="number"
-            id="companyId"
-            class="form-control"
-            formControlName="companyId"
-            [class.is-invalid]="addBuildingForm.get('companyId')?.touched && addBuildingForm.get('companyId')?.invalid"
-          />
+          <label for="siteManager" class="form-label fw-bold">Site Manager</label>
+          <select
+            id="siteManager"
+            class="form-select"
+            formControlName="siteManager"
+            [class.is-invalid]="addBuildingForm.get('siteManager')?.touched && addBuildingForm.get('siteManager')?.invalid"
+          >
+            <option value="" disabled selected>Select Site Manager</option>
+            <option *ngFor="let e of siteManagers|async" [ngValue]="e.id">
+              {{ e.name }}
+            </option>
+          </select>
           <div
-            *ngIf="addBuildingForm.get('companyId')?.touched && addBuildingForm.get('companyId')?.invalid"
+            *ngIf="addBuildingForm.get('siteManager')?.touched && addBuildingForm.get('siteManager')?.invalid"
             class="invalid-feedback"
           >
-            Company ID is required.
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <label for="floorCount" class="form-label fw-bold">Floor Count</label>
-          <input
-            type="number"
-            id="floorCount"
-            class="form-control"
-            formControlName="floorCount"
-            [class.is-invalid]="addBuildingForm.get('floorCount')?.touched && addBuildingForm.get('floorCount')?.invalid"
-          />
-          <div
-            *ngIf="addBuildingForm.get('floorCount')?.touched && addBuildingForm.get('floorCount')?.invalid"
-            class="invalid-feedback"
-          >
-            Floor count must be greater than 0.
-          </div>
-        </div>
-
-        <div class="col-md-6 mb-3">
-          <label for="unitCount" class="form-label fw-bold">Unit Count</label>
-          <input
-            type="number"
-            id="unitCount"
-            class="form-control"
-            formControlName="unitCount"
-            [class.is-invalid]="addBuildingForm.get('unitCount')?.touched && addBuildingForm.get('unitCount')?.invalid"
-          />
-          <div
-            *ngIf="addBuildingForm.get('unitCount')?.touched && addBuildingForm.get('unitCount')?.invalid"
-            class="invalid-feedback"
-          >
-            Unit count must be greater than 0.
+            Site Manager is required.
           </div>
         </div>
       </div>

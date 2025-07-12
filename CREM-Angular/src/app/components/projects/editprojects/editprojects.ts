@@ -2,6 +2,7 @@ import { ChangeDetectorRef, Component } from '@angular/core';
 import { Project } from '../../../models/project.model';
 import { ProjectService } from '../../../services/project.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { EmployeeService } from '../../../services/employee.service';
 
 @Component({
   selector: 'app-editprojects',
@@ -12,9 +13,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class Editprojects {
   id!: string;
   project: Project = new Project();
+  projectManagers!: any;
 
   constructor(
     private projectService: ProjectService,
+    private employeeService: EmployeeService,
     private ar: ActivatedRoute,
     private cdr: ChangeDetectorRef,
     private router: Router
@@ -23,6 +26,7 @@ export class Editprojects {
   ngOnInit(): void {
     this.id = this.ar.snapshot.params['id'];
     this.viewProjects();
+    this. viewEmployees();
   }
 
   // View Project
@@ -51,5 +55,11 @@ export class Editprojects {
         console.log(error);
       }
     })
+  }
+
+  // View Employees
+  viewEmployees(): void {
+    this.projectManagers = this.employeeService.viewEmployeeByRole("Project Manager");
+    console.log(this.projectManagers);
   }
 }

@@ -37,9 +37,10 @@ export class EmployeeService {
   }
 
   // Search employee by role
-  viewProjectManager(): Observable<any> {
-    return this.http.get(`${this.baseUrl}?role=Project Manager`);
+  viewEmployeeByRole(role: string): Observable<any> {
+    return this.http.get(`${this.baseUrl}?role=${role}`);
   }
+
 
   //Update employee status
   editEmployeeStatus(id: string, status: boolean): Observable<any> {

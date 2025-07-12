@@ -31,7 +31,10 @@ export class Addemployees implements OnInit{
       salarytype: ['', Validators.required],
       salary: [null, [Validators.required, Validators.min(1)]],
       status: [false],
-      buildingId: ['']
+      buildingId: [''],
+      photo: ['', Validators.required],
+      country: ['', Validators.required],
+      address: ['', Validators.required],
     });
   }
 

@@ -4,8 +4,8 @@ export class Building {
     id!: string;
     name!: string;
     type!: string;
-    project!: Project;
-    companyId!: number;
+    project!: string;
+    siteManager!: string;
     floorCount!: number;
     unitCount!: number;
 }
