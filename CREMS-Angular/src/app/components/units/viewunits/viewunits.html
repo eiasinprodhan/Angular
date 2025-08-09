@@ -1,0 +1,121 @@
+<!-- Unit Details Card -->
+<div class="card">
+
+  <!-- Card Header -->
+  <div class="row card-header flex-column flex-md-row border-bottom mx-0 px-3">
+    <div class="col-md-auto me-auto d-md-flex align-items-center">
+      <h5 class="card-title mb-0 text-md-start text-center">Unit Details</h5>
+    </div>
+    <div class="col-md-auto d-flex justify-content-end align-items-center">
+      <button type="button" class="btn btn-primary" onclick="history.back()">
+        <i class="fa-solid fa-arrow-left mx-1"></i>Return
+      </button>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="card-body my-5">
+    <div *ngIf="unit && unit.unitNumber; else loadingTemplate">
+
+      <!-- Carousel Wrapper to constrain size -->
+      <div id="unitPhotoCarouselWrapper" class="mx-auto mb-4" style="max-width: 500px;">
+        <div id="unitPhotoCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div 
+              *ngFor="let url of unit.photoUrls; let i = index" 
+              class="carousel-item" 
+              [ngClass]="{ active: i === 0 }"
+            >
+              <img 
+                [src]="url" 
+                class="d-block w-100" 
+                alt="Unit Photo" 
+                style="max-height: 250px; object-fit: cover;" 
+              />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#unitPhotoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#unitPhotoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Row 1: ID and Unit Number -->
+      <div class="row mt-4">
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-bold">Unit ID</label>
+          <div class="text-muted">{{ unit.id }}</div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-bold">Unit Number</label>
+          <div class="text-muted">{{ unit.unitNumber }}</div>
+        </div>
+      </div>
+
+      <!-- Row 2: Area and Bedrooms -->
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-bold">Area (sqft)</label>
+          <div class="text-muted">{{ unit.area }}</div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-bold">Bedrooms</label>
+          <div class="text-muted">{{ unit.bedrooms }}</div>
+        </div>
+      </div>
+
+      <!-- Row 3: Bathrooms and Booking -->
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-bold">Bathrooms</label>
+          <div class="text-muted">{{ unit.bathrooms }}</div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-bold">Booking Status</label>
+          <div>
+            <span
+              class="badge rounded-pill"
+              [ngClass]="unit.isBooked ? 'bg-success' : 'bg-secondary'">
+              {{ unit.isBooked ? 'Booked' : 'Available' }}
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 4: Floor and Building Names -->
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-bold">Floor</label>
+          <div class="text-muted">{{ floor.name || unit.floorId }}</div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-bold">Building</label>
+          <p class="form-control-plaintext"><a routerLink="/viewbuildings/{{building.id}}">{{ building.name || unit.buildingId }}</a></p>
+        </div>
+      </div>
+
+      <!-- Row 5: Customer Name -->
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-bold">Customer</label>
+          <div class="text-muted">
+            {{ customer.name || unit.customerId || 'N/A' }}
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Loading State -->
+    <ng-template #loadingTemplate>
+      <p class="text-muted fst-italic">
+        Loading unit data or no data available.
+      </p>
+    </ng-template>
+  </div>
+</div>

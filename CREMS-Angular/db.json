@@ -1,0 +1,832 @@
+{
+  "projects": [
+    {
+      "id": "d28e",
+      "name": "Project A",
+      "budget": 100000,
+      "startDate": "2025-07-27",
+      "expectedEndDate": "2026-01-31",
+      "projectType": "Mixed-use",
+      "projectManager": "6270",
+      "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
+    }
+  ],
+  "buildings": [
+    {
+      "id": "f82b",
+      "name": "Building A",
+      "type": "Mixed-use",
+      "project": "d28e",
+      "siteManager": "0b87",
+      "floorCount": 20,
+      "unitCount": 60,
+      "photo": "https://concordrealestatebd.com/wp-content/uploads/2023/12/01.-MBR_EXT_V01.jpg"
+    },
+    {
+      "id": "be5f",
+      "name": "Building B",
+      "type": "Mixed-use",
+      "project": "d28e",
+      "siteManager": "0b87",
+      "floorCount": 30,
+      "unitCount": 60,
+      "photo": "https://concordrealestatebd.com/wp-content/uploads/2025/03/Concord-MN-Nibash-3-1.png"
+    }
+  ],
+  "floors": [
+    {
+      "id": "ff2a",
+      "name": "Ground",
+      "building": "f82b"
+    },
+    {
+      "id": "2cdd",
+      "name": "Ground",
+      "building": "be5f"
+    }
+  ],
+  "stages": [
+    {
+      "id": "a8ee",
+      "name": "Pilling",
+      "startDate": "2025-07-18",
+      "endDate": "2025-07-31",
+      "floor": "3069",
+      "labours": [
+        "2ec0",
+        "5aa8",
+        "6480",
+        "9854",
+        "1111"
+      ]
+    },
+    {
+      "id": "a1ec",
+      "name": "Pilling",
+      "startDate": "2025-07-23",
+      "endDate": "2025-07-31",
+      "floor": "539d",
+      "labours": [
+        "2ec0",
+        "5aa8",
+        "6480",
+        "9854",
+        "1111"
+      ]
+    },
+    {
+      "id": "112a",
+      "name": "Pilling",
+      "startDate": "2025-07-27",
+      "endDate": "2025-07-27",
+      "floor": "1ef9",
+      "labours": [
+        "2ec0",
+        "5aa8",
+        "6480",
+        "9854",
+        "1111"
+      ]
+    },
+    {
+      "id": "8be1",
+      "name": "Pilling",
+      "startDate": "2025-07-27",
+      "endDate": "2025-08-27",
+      "floor": "2cdd",
+      "labours": [
+        "2ec0",
+        "5aa8",
+        "6480",
+        "9854",
+        "1111"
+      ]
+    }
+  ],
+  "attendances": [
+    {
+      "id": "c3f6",
+      "employeeId": "2ec0",
+      "stageId": null,
+      "date": "2025-07-23",
+      "status": "Present",
+      "salary": 600
+    },
+    {
+      "id": "7d25",
+      "employeeId": "5aa8",
+      "stageId": null,
+      "date": "2025-07-23",
+      "status": "Present",
+      "salary": 800
+    },
+    {
+      "id": "9e67",
+      "employeeId": "6480",
+      "stageId": null,
+      "date": "2025-07-23",
+      "status": "Present",
+      "salary": 800
+    },
+    {
+      "id": "7f22",
+      "employeeId": "9854",
+      "stageId": null,
+      "date": "2025-07-23",
+      "status": "Present",
+      "salary": 900
+    },
+    {
+      "id": "ea3f",
+      "employeeId": "1111",
+      "stageId": null,
+      "date": "2025-07-23",
+      "status": "Present",
+      "salary": 1000
+    },
+    {
+      "id": "2113",
+      "employeeId": "2ec0",
+      "stageId": null,
+      "date": "2025-07-24",
+      "status": "Present",
+      "salary": 600
+    },
+    {
+      "id": "9bf3",
+      "employeeId": "5aa8",
+      "stageId": null,
+      "date": "2025-07-24",
+      "status": "Absent",
+      "salary": 0
+    },
+    {
+      "id": "8f66",
+      "employeeId": "6480",
+      "stageId": null,
+      "date": "2025-07-24",
+      "status": "Present",
+      "salary": 800
+    },
+    {
+      "id": "e28f",
+      "employeeId": "9854",
+      "stageId": null,
+      "date": "2025-07-24",
+      "status": "Absent",
+      "salary": 0
+    },
+    {
+      "id": "48f0",
+      "employeeId": "1111",
+      "stageId": null,
+      "date": "2025-07-24",
+      "status": "Present",
+      "salary": 1000
+    },
+    {
+      "id": "529f",
+      "employeeId": "2ec0",
+      "stageId": null,
+      "date": "2025-07-31",
+      "status": "Present",
+      "salary": 600
+    },
+    {
+      "id": "f93d",
+      "employeeId": "5aa8",
+      "stageId": null,
+      "date": "2025-07-31",
+      "status": "Absent",
+      "salary": 0
+    },
+    {
+      "id": "0a32",
+      "employeeId": "6480",
+      "stageId": null,
+      "date": "2025-07-31",
+      "status": "Present",
+      "salary": 800
+    },
+    {
+      "id": "c030",
+      "employeeId": "9854",
+      "stageId": null,
+      "date": "2025-07-31",
+      "status": "Present",
+      "salary": 900
+    },
+    {
+      "id": "0000",
+      "employeeId": "1111",
+      "stageId": null,
+      "date": "2025-07-31",
+      "status": "Present",
+      "salary": 1000
+    },
+    {
+      "id": "cd65",
+      "employeeId": "2ec0",
+      "stageId": "a1ec",
+      "date": "2025-07-23",
+      "status": "Present",
+      "salary": 600
+    },
+    {
+      "id": "64b3",
+      "employeeId": "5aa8",
+      "stageId": "a1ec",
+      "date": "2025-07-23",
+      "status": "Present",
+      "salary": 800
+    },
+    {
+      "id": "53ba",
+      "employeeId": "6480",
+      "stageId": "a1ec",
+      "date": "2025-07-23",
+      "status": "Present",
+      "salary": 800
+    },
+    {
+      "employeeId": "9854",
+      "stageId": "a1ec",
+      "date": "2025-07-23",
+      "status": "Absent",
+      "salary": 0,
+      "id": "f142"
+    },
+    {
+      "id": "6892",
+      "employeeId": "1111",
+      "stageId": "a1ec",
+      "date": "2025-07-23",
+      "status": "Absent",
+      "salary": 0
+    },
+    {
+      "id": "c993",
+      "employeeId": "2ec0",
+      "stageId": null,
+      "date": "2025-07-24",
+      "status": "Present",
+      "salary": 600
+    },
+    {
+      "id": "2863",
+      "employeeId": "5aa8",
+      "stageId": null,
+      "date": "2025-07-24",
+      "status": "Present",
+      "salary": 800
+    },
+    {
+      "id": "e97e",
+      "employeeId": "6480",
+      "stageId": null,
+      "date": "2025-07-24",
+      "status": "Absent",
+      "salary": 0
+    },
+    {
+      "id": "767f",
+      "employeeId": "9854",
+      "stageId": null,
+      "date": "2025-07-24",
+      "status": "Absent",
+      "salary": 0
+    },
+    {
+      "id": "2963",
+      "employeeId": "1111",
+      "stageId": null,
+      "date": "2025-07-24",
+      "status": "Present",
+      "salary": 1000
+    },
+    {
+      "id": "4a2a",
+      "employeeId": "2ec0",
+      "stageId": "a1ec",
+      "date": "2025-07-24",
+      "status": "Present",
+      "salary": 600
+    },
+    {
+      "id": "e8c2",
+      "employeeId": "5aa8",
+      "stageId": "a1ec",
+      "date": "2025-07-24",
+      "status": "Present",
+      "salary": 800
+    },
+    {
+      "id": "9ae0",
+      "employeeId": "6480",
+      "stageId": "a1ec",
+      "date": "2025-07-24",
+      "status": "Present",
+      "salary": 800
+    },
+    {
+      "id": "991a",
+      "employeeId": "9854",
+      "stageId": "a1ec",
+      "date": "2025-07-24",
+      "status": "Absent",
+      "salary": 0
+    },
+    {
+      "id": "0867",
+      "employeeId": "1111",
+      "stageId": "a1ec",
+      "date": "2025-07-24",
+      "status": "Absent",
+      "salary": 0
+    },
+    {
+      "id": "b6be",
+      "employeeId": "2ec0",
+      "stageId": "112a",
+      "date": "2025-07-27",
+      "status": "Present",
+      "salary": 600
+    },
+    {
+      "id": "7008",
+      "employeeId": "5aa8",
+      "stageId": "112a",
+      "date": "2025-07-27",
+      "status": "Present",
+      "salary": 800
+    },
+    {
+      "id": "a0de",
+      "employeeId": "6480",
+      "stageId": "112a",
+      "date": "2025-07-27",
+      "status": "Present",
+      "salary": 800
+    },
+    {
+      "id": "406c",
+      "employeeId": "9854",
+      "stageId": "112a",
+      "date": "2025-07-27",
+      "status": "Absent",
+      "salary": 0
+    },
+    {
+      "id": "88e9",
+      "employeeId": "1111",
+      "stageId": "112a",
+      "date": "2025-07-27",
+      "status": "Absent",
+      "salary": 0
+    }
+  ],
+  "rawmaterials": [
+    {
+      "id": "1",
+      "name": "Sand",
+      "quantity": 0,
+      "unit": "Cubic Feet"
+    },
+    {
+      "id": "2",
+      "name": "Gravel",
+      "quantity": 0,
+      "unit": "Cubic Feet"
+    },
+    {
+      "id": "3",
+      "name": "Crushed Stone",
+      "quantity": 0,
+      "unit": "Cubic Feet"
+    },
+    {
+      "id": "4",
+      "name": "Cement",
+      "quantity": 0,
+      "unit": "Bags"
+    },
+    {
+      "id": "5",
+      "name": "Lime",
+      "quantity": 0,
+      "unit": "Kg"
+    },
+    {
+      "id": "6",
+      "name": "Fly Ash",
+      "quantity": 0,
+      "unit": "Kg"
+    },
+    {
+      "id": "7",
+      "name": "Slag",
+      "quantity": 0,
+      "unit": "Kg"
+    },
+    {
+      "id": "8",
+      "name": "Concrete",
+      "quantity": 0,
+      "unit": "Cubic Feet"
+    },
+    {
+      "id": "9",
+      "name": "Mortar",
+      "quantity": 0,
+      "unit": "Kg"
+    },
+    {
+      "id": "10",
+      "name": "Clay Bricks",
+      "quantity": 0,
+      "unit": "Pieces"
+    },
+    {
+      "id": "11",
+      "name": "Concrete Blocks",
+      "quantity": 0,
+      "unit": "Pieces"
+    },
+    {
+      "id": "12",
+      "name": "Fly Ash Bricks",
+      "quantity": 0,
+      "unit": "Pieces"
+    },
+    {
+      "id": "13",
+      "name": "Aac Blocks",
+      "quantity": 0,
+      "unit": "Pieces"
+    },
+    {
+      "id": "14",
+      "name": "Tmt Bars",
+      "quantity": 0,
+      "unit": "Kg"
+    },
+    {
+      "id": "15",
+      "name": "Steel Rods",
+      "quantity": 0,
+      "unit": "Kg"
+    },
+    {
+      "id": "16",
+      "name": "Wire Mesh",
+      "quantity": 0,
+      "unit": "Square Feet"
+    },
+    {
+      "id": "17",
+      "name": "Structural Steel",
+      "quantity": 0,
+      "unit": "Kg"
+    },
+    {
+      "id": "18",
+      "name": "Plywood",
+      "quantity": 0,
+      "unit": "Sheets"
+    },
+    {
+      "id": "19",
+      "name": "Timber",
+      "quantity": 0,
+      "unit": "Cubic Feet"
+    },
+    {
+      "id": "20",
+      "name": "Pvc Pipes",
+      "quantity": 0,
+      "unit": "Feet"
+    },
+    {
+      "id": "21",
+      "name": "Plastic Sheets",
+      "quantity": 0,
+      "unit": "Square Feet"
+    },
+    {
+      "id": "22",
+      "name": "Glass",
+      "quantity": 0,
+      "unit": "Square Feet"
+    },
+    {
+      "id": "23",
+      "name": "Bitumen",
+      "quantity": 0,
+      "unit": "Liters"
+    },
+    {
+      "id": "24",
+      "name": "Asphalt",
+      "quantity": 0,
+      "unit": "Tons"
+    },
+    {
+      "id": "25",
+      "name": "Paint",
+      "quantity": 0,
+      "unit": "Liters"
+    },
+    {
+      "id": "26",
+      "name": "Primer",
+      "quantity": 0,
+      "unit": "Liters"
+    },
+    {
+      "id": "27",
+      "name": "Ceramic Tiles",
+      "quantity": 0,
+      "unit": "Square Feet"
+    },
+    {
+      "id": "28",
+      "name": "Vitrified Tiles",
+      "quantity": 250,
+      "unit": "Square Feet"
+    },
+    {
+      "id": "29",
+      "name": "Plaster Of Paris",
+      "quantity": 0,
+      "unit": "Kg"
+    },
+    {
+      "id": "30",
+      "name": "Water",
+      "quantity": 0,
+      "unit": "Liters"
+    },
+    {
+      "id": "31",
+      "name": "Admixtures",
+      "quantity": 0,
+      "unit": "Liters"
+    },
+    {
+      "id": "32",
+      "name": "Insulation Foam",
+      "quantity": 0,
+      "unit": "Sheets"
+    },
+    {
+      "id": "33",
+      "name": "Rock Wool",
+      "quantity": 0,
+      "unit": "Kg"
+    },
+    {
+      "id": "34",
+      "name": "Sealant",
+      "quantity": 0,
+      "unit": "Tubes"
+    },
+    {
+      "id": "35",
+      "name": "Adhesive",
+      "quantity": 0,
+      "unit": "Liters"
+    }
+  ],
+  "rawmaterialsstockin": [
+    {
+      "id": "934b",
+      "rawMaterialId": "1",
+      "name": "Sand",
+      "date": "2025-07-23",
+      "quantity": 1000,
+      "unitprice": 25,
+      "unit": "Cubic Feet",
+      "supplier": "Sand Traders Ltd.",
+      "totalprice": 25000
+    },
+    {
+      "id": "f212",
+      "rawMaterialId": "28",
+      "name": "Vitrified Tiles",
+      "date": "2025-07-23",
+      "quantity": 500,
+      "unitprice": 33,
+      "unit": "Square Feet",
+      "supplier": "fdsafdf",
+      "totalprice": 16500
+    }
+  ],
+  "rawmaterialsstockout": [
+    {
+      "id": "d305",
+      "rawMaterialId": "1",
+      "stageId": null,
+      "name": "Sand",
+      "date": "2025-07-23",
+      "quantity": 500,
+      "unit": "Cubic Feet"
+    },
+    {
+      "id": "2fb2",
+      "rawMaterialId": "28",
+      "stageId": null,
+      "name": "Vitrified Tiles",
+      "date": "2025-07-23",
+      "quantity": 250,
+      "unit": "Square Feet"
+    },
+    {
+      "id": "8d5f",
+      "rawMaterialId": "1",
+      "stageId": "a1ec",
+      "name": "Sand",
+      "date": "2025-07-24",
+      "quantity": 250,
+      "unit": "Cubic Feet"
+    },
+    {
+      "id": "0b68",
+      "rawMaterialId": "1",
+      "stageId": "112a",
+      "name": "Sand",
+      "date": "2025-07-27",
+      "quantity": 250,
+      "unit": "Cubic Feet"
+    }
+  ],
+  "units": [
+    {
+      "id": "1e9d",
+      "unitNumber": "G-101",
+      "buildingId": "f82b",
+      "floorId": "ff2a",
+      "area": 5000,
+      "bedrooms": 5,
+      "bathrooms": 5,
+      "isBooked": false,
+      "customerId": "",
+      "price": 5000000,
+      "photoUrls": [
+        "https://concordrealestatebd.com/wp-content/uploads/2023/12/09.-MBR_PodiumAxono.jpg",
+        "https://concordrealestatebd.com/wp-content/uploads/2023/12/12.-MBR_Reception_R2.jpg",
+        "https://concordrealestatebd.com/wp-content/uploads/2023/12/10.-MBR_DropOff_V04.jpg",
+        "https://concordrealestatebd.com/wp-content/uploads/2023/12/17.-MBR_Restaurant-01.jpg",
+        "https://concordrealestatebd.com/wp-content/uploads/2023/12/15.-MBR_LObby.jpg",
+        "https://concordrealestatebd.com/wp-content/uploads/2023/12/20.-MBR_Terrace.jpg",
+        "https://concordrealestatebd.com/wp-content/uploads/2023/12/MBR_Office.jpg",
+        "https://concordrealestatebd.com/wp-content/uploads/2023/12/13.-MBR_Security-Entry.jpg",
+        "https://concordrealestatebd.com/wp-content/uploads/2023/12/22.-MBR_BAR01.jpg",
+        "https://concordrealestatebd.com/wp-content/uploads/2023/12/23.-MBR_BAR02.jpg"
+      ]
+    },
+    {
+      "id": "1dc4",
+      "unitNumber": "G-101",
+      "buildingId": "be5f",
+      "floorId": "2cdd",
+      "area": 5000,
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "isBooked": false,
+      "customerId": "",
+      "price": 100000,
+      "photoUrls": [
+        "https://concordrealestatebd.com/wp-content/uploads/2025/03/Concord-MN-Nibash-9-1.png",
+        "https://concordrealestatebd.com/wp-content/uploads/2025/03/Concord-MN-Nibash-6.png",
+        "https://concordrealestatebd.com/wp-content/uploads/2025/03/Concord-MN-Nibash-7-1.png",
+        "https://concordrealestatebd.com/wp-content/uploads/2025/03/Concord-MN-Nibash-10-1.png",
+        "https://concordrealestatebd.com/wp-content/uploads/2025/03/Concord-MN-Nibash-8-1.png"
+      ]
+    }
+  ],
+  "employees": [
+    {
+      "id": "6270",
+      "name": "Eiasin Prodhan",
+      "email": "eiasinprodhan@gmail.com",
+      "phone": "01888118271",
+      "password": "12345678",
+      "nid": 9865214587,
+      "joiningDate": "2025-07-01",
+      "role": "Project Manager",
+      "salarytype": "Daily",
+      "salary": 10000,
+      "status": false,
+      "photo": "https://avatars.githubusercontent.com/u/196037667?v=4",
+      "country": "Bangladesh",
+      "address": "Gazaria, Munshiganj, Dhaka"
+    },
+    {
+      "id": "0b87",
+      "name": "Rahamat Ullah",
+      "email": "rahamatullah@gmail.com",
+      "phone": "01785486985",
+      "password": "12345678",
+      "nid": 8652147587,
+      "joiningDate": "2025-07-01",
+      "role": "Site Manager",
+      "salarytype": "Monthly",
+      "salary": 1,
+      "status": false,
+      "photo": "https://avatars.githubusercontent.com/u/108518708?v=4",
+      "country": "Bangladesh",
+      "address": "Dhaka"
+    },
+    {
+      "id": "2ec0",
+      "name": "Labour A",
+      "email": "",
+      "phone": "01865987587487",
+      "password": "12345678",
+      "nid": 1111111111,
+      "joiningDate": "2025-07-01",
+      "role": "Labour",
+      "salarytype": "Daily",
+      "salary": 600,
+      "status": false,
+      "photo": "11111111",
+      "country": "Bangladesh",
+      "address": "Dhaka"
+    },
+    {
+      "id": "5aa8",
+      "name": "Labour B",
+      "email": null,
+      "phone": "01888888888",
+      "password": "12345678",
+      "nid": 111111111,
+      "joiningDate": "2025-07-01",
+      "role": "Labour",
+      "salarytype": "Daily",
+      "salary": 800,
+      "status": null,
+      "photo": "111",
+      "country": "Bangladesh",
+      "address": "1111"
+    },
+    {
+      "id": "6480",
+      "name": "Labour C",
+      "email": "",
+      "phone": "01888888888",
+      "password": "5454545454545454545",
+      "nid": 465456456456,
+      "joiningDate": "2025-07-16",
+      "role": "Labour",
+      "salarytype": "Daily",
+      "salary": 800,
+      "status": false,
+      "photo": "5645645",
+      "country": "Bangladesh",
+      "address": "6455654"
+    },
+    {
+      "id": "9854",
+      "name": "Labour D",
+      "email": "",
+      "phone": "01888888888",
+      "password": "5454545454545454545",
+      "nid": 465456456456,
+      "joiningDate": "2025-07-16",
+      "role": "Labour",
+      "salarytype": "Daily",
+      "salary": 900,
+      "status": false,
+      "photo": "5645645",
+      "country": "Bangladesh",
+      "address": "6455654"
+    },
+    {
+      "id": "1111",
+      "name": "Labour E",
+      "email": "",
+      "phone": "01888888888",
+      "password": "5454545454545454545",
+      "nid": 465456456456,
+      "joiningDate": "2025-07-16",
+      "role": "Labour",
+      "salarytype": "Daily",
+      "salary": 1000,
+      "status": false,
+      "photo": "5645645",
+      "country": "Bangladesh",
+      "address": "6455654"
+    }
+  ],
+  "transactions": [],
+  "customers": [
+    {
+      "id": "29ee",
+      "name": "Rakib Isalm",
+      "email": "rakibislam@gmail.com",
+      "phone": "01875485474",
+      "photo": "https://avatars.githubusercontent.com/u/196038058?v=4",
+      "address": "Mohammadpur, Dhaka"
+    }
+  ]
+}

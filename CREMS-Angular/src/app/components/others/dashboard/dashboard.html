@@ -1,0 +1,81 @@
+<div class="row g-6">
+  <!-- Card Border Shadow -->
+
+  <div class="col-lg-3 col-sm-6">
+    <a routerLink="/listprojects">
+      <div class="card card-border-shadow-primary h-100">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="avatar me-4">
+              <span class="avatar-initial rounded bg-label-primary"
+                ><i class="icon-base ti tabler-album icon-28px"></i
+              ></span>
+            </div>
+            <h4 class="mb-0" *ngIf="(projects) as projectList">
+              {{projectList.length}}
+            </h4>
+          </div>
+          <p class="mb-1">Projects</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-lg-3 col-sm-6">
+    <a routerLink="/listbuildings">
+      <div class="card card-border-shadow-info h-100">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="avatar me-4">
+              <span class="avatar-initial rounded bg-label-info"
+                ><i class="icon-base ti tabler-buildings icon-28px"></i
+              ></span>
+            </div>
+            <h4 class="mb-0" *ngIf="(buildings) as buildingList">
+              {{buildingList.length}}
+            </h4>
+          </div>
+          <p class="mb-1">Buildings</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-lg-3 col-sm-6">
+    <a routerLink="/listemployees">
+      <div class="card card-border-shadow-warning h-100">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="avatar me-4">
+              <span class="avatar-initial rounded bg-label-warning"
+                ><i class="icon-base ti tabler-users-group icon-28px"></i
+              ></span>
+            </div>
+            <h4 class="mb-0" *ngIf="(employees) as employeeList">
+              {{employeeList.length}}
+            </h4>
+          </div>
+          <p class="mb-1">Employees</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-lg-3 col-sm-6">
+    <a routerLink="/listcustomers">
+      <div class="card card-border-shadow-danger h-100">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="avatar me-4">
+              <span class="avatar-initial rounded bg-label-danger"
+                ><i class="icon-base ti tabler-user-heart icon-28px"></i
+              ></span>
+            </div>
+            <h4 class="mb-0" *ngIf="(customers) as customerList">
+              {{customerList.length}}
+            </h4>
+          </div>
+          <p class="mb-1">Customers</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <!--/ Card Border Shadow -->
+</div>
